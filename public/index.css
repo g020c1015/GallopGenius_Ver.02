@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+
+
+@media screen{
+	header{
+		position: fixed; /*ヘッダー固定*/
+		top: 0;
+		left:0;
+		width: 100vw;
+		height: 12vh;
+		background-color: #ceff67;
+		font-size: 7vh;
+		font-family:'Ubuntu Mono', monospace;
+		font-weight: bold;
+		color: #424141;
+	}
+	.headerText{
+		height: 12vh;
+		display: flex;
+		align-items: center;
+		padding-left: 20px;
+	}
+
+	/*ハンバーガーメニューボタンの設定*/
+	.menu-btn{
+		top: 0%;
+		position: fixed;
+		right: 10px;
+		display: flex;
+		align-items: center;
+		height: 12vh;
+		width: 60px;
+		justify-content: center;
+		z-index: 100;
+	}
+	.menu-btn span,
+	.menu-btn span:before,
+	.menu-btn span:after {
+		content: '';
+		display: block;
+		height: 3px;
+		width: 25px;
+		border-radius: 3px;
+		background-color: #424141;
+		position: absolute;
+	}
+	.menu-btn span:before {
+		bottom: 8px;
+	}
+	.menu-btn span:after {
+		top: 8px;
+	}
+	/*☓マークに変える設定*/
+	#menu-btn-check:checked ~ .menu-btn span {
+		background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+	}
+	#menu-btn-check:checked ~ .menu-btn span::before {
+		bottom: 0;
+		transform: rotate(45deg);
+	}
+	#menu-btn-check:checked ~ .menu-btn span::after {
+		top: 0;
+		transform: rotate(-45deg);
+	}
+	/*チェックボックスを隠す*/
+	#menu-btn-check{
+		display: none;
+	}
+
+	/*メニュー中身*/
+	.menu-content {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		top: 0;
+		left: 70%;
+		z-index: 90;
+		background-color: #ceff67;
+		font-family:'Ubuntu Mono', monospace;
+	}
+	.menu-content ul {
+		padding: 70px 10px 0;
+	}
+	.menu-content ul li {
+		border-bottom: dotted 3px #424141;
+		list-style: none;
+	}
+	.menu-content ul li a {
+		display: block;
+		width: 100%;
+		font-size: 20px;
+		box-sizing: border-box;
+		color:#424141;
+		text-decoration: none;
+		padding: 9px 15px 10px 0;
+		position: relative;
+	}
+
+	.menu-content {
+		width: 30%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 100%;
+		z-index: 90;
+		background-color: #ceff67;
+		transition: all 0.5s;/*アニメーション設定*/
+	}
+	#menu-btn-check:checked ~ .menu-content {
+		left: 70%;/*メニューを画面内へ*/
+	}
+
+	.wrapper{
+		height: 100%;
+		min-height: 100vh;
+		position: relative;
+		padding-bottom: 60px;
+		box-sizing: border-box;
+	}
+
+
+	/*フッタ―*/
+	footer{
+		position: absolute;
+		bottom: 0;
+		background-color: #A9CF79;
+		color: #424141;
+		font-size: 15px;
+		font-weight: bold;
+		font-family:'Ubuntu Mono', monospace;
+		width: 100%;
+		height: 18%;
+		z-index: 80;
+	}
+	.footer-menu {
+		height: 60px;
+		align-items: center;
+	}
+	.footer-menu-list {
+		list-style: none;
+		text-align: center;
+		line-height: 60px;
+	}
+	.footer-menu-list li {
+		margin: 10px;
+		display: inline;
+		vertical-align: middle;
+	}
+
+	/*img設定*/
+	img{
+		width: 70px;
+		height: 70px;
+	}
+
+	body{
+		background-color: #faf3f3;
+	}
+	/*本文css*/
+	main{
+		margin-top: 13%;
+		margin-bottom: 20%;
+	}
+
+	/*図形を並べるcss*/
+	.boxArea{
+		font-family: 'Ubuntu Mono', monospace;
+		font-size: large;
+		font-weight: bold;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		align-items: center;
+		padding: 20px;
+	}
+	/*ボタン内画像*/
+	.imgBtn{
+		object-fit: cover;
+		width:100%;
+		height: 100%;
+		border-radius:45px;
+	}
+	/*ボタン用テキスト*/
+	.box-text{
+		position: absolute;
+		visibility: hidden;
+	}
+	/*ボタン用css*/
+	.box-AIPrediction{
+		width: 30%;
+		height: 150px;
+		background-color: #ffffff;
+		border: solid 7px #bef549;
+		border-radius: 45px;;
+		margin: 0;
+		box-shadow: 2px 2px 4px -2px rgba(255,255,255,0.5) inset;
+		box-sizing: border-box;
+	}
+	.box-HumanPrediction{
+		width: 30%;
+		height: 150px;
+		background-color: white;
+		border: solid 7px #8aca00;
+		border-radius:45px;
+		margin: 0;
+		box-shadow: 2px 2px 4px -2px rgba(255,255,255,0.5) inset;
+		box-sizing: border-box;
+	}
+	.box-HorseList{
+		width: 30%;
+		height: 150px;
+		background-color: white;
+		border: solid 7px #bef549;
+		border-radius:45px;
+		margin: 0;
+		box-shadow: 2px 2px 4px -2px rgba(255,255,255,0.5) inset;
+		box-sizing: border-box;
+	}
+	.box-RecoveryRate{
+		width: 30%;
+		height: 150px;
+		background-color: white;
+		border: solid 7px #8aca00;
+		border-radius:45px;
+		margin: 0;
+		box-shadow: 2px 2px 4px -2px rgba(255,255,255,0.5) inset;
+		box-sizing: border-box;
+	}
+	.box-RaceCalender{
+		width: 30%;
+		height: 150px;
+		background-color: white;
+		border: solid 7px #bef549;
+		border-radius:45px;
+		margin: 0;
+		box-shadow: 2px 2px 4px -2px rgba(255,255,255,0.5) inset;
+		box-sizing: border-box;
+	}
+	.box-Others{
+		width: 30%;
+		height: 150px;
+		background-color: white;
+		border: solid 7px #8aca00;
+		border-radius:45px;
+		margin: 0;
+		box-shadow: 2px 2px 4px -2px rgba(255,255,255,0.5) inset;
+		box-sizing: border-box;
+	}
+
+	/*hover設定*/
+	/*マウスをかざしたときに薄いイメージ画像(縁あり)を表示*/
+	.box-AIPrediction .imgBtn:hover{
+		opacity: 0.2;
+		transition: all 0.6s ease;
+	}
+	.box-HumanPrediction .imgBtn:hover{
+		opacity: 0.2;
+		transition: all 0.6s ease;
+	}
+	.box-HorseList .imgBtn:hover{
+		opacity: 0.2;
+		transition: all 0.6s ease;
+	}
+	.box-RaceCalender .imgBtn:hover{
+		opacity: 0.2;
+		transition: all 0.6s ease;
+	}
+	.box-RecoveryRate .imgBtn:hover{
+		opacity: 0.2;
+		transition: all 0.6s ease;
+	}
+	.box-Others .imgBtn:hover:hover{
+		opacity: 0.2;
+		transition: all 0.6s ease;
+	}
+
+	/*mainFrame共通css*/
+	.mainFrame{
+		margin: 5% 5% 20%;
+		height: 100vh;
+		border-radius: 30px;
+		border: solid 10px;
+		font-family: 'Ubuntu Mono', monospace;
+	}
+	/*Race Calender用css*/
+	.RCtext{
+		margin-top:5%;
+		text-align:center;
+		font-size: 7vh;
+		font-weight: bold;
+	}
+
+
+	/*others用テキストcss*/
+	.OText{
+		font-weight: bold;
+		font-size: 7vh;
+		margin-top: 5%;
+		margin-left: 5%;
+	}
+	.OText2{
+		font-weight: bold;
+		font-size: 5vh;
+		margin-top: 5%;
+		margin-left: 30%;
+		margin-right: 5%;
+	}
+	/*アニメーション設定*/
+	.fade-in-right{
+		opacity: 0;
+		animation-name: fadein-right;
+		animation-duration: 2s;
+		animation-delay: 0s;
+		animation-timing-function: ease-out;
+		animation-fill-mode: forwards;
+	}
+	@keyframes fadein-right{
+		0%{
+			opacity: 0;
+			transform: translateX(20%);
+		}
+		100%{
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+}
+
+
+
+
+
