@@ -35,7 +35,7 @@
     <!--ボタン６つ配置-->
         <div class="boxArea">
             <div class="box-AIPrediction"><div class="box-text">AI Prediction</div>
-                <img src="./imgFolder/AIイメージ.png" class="imgBtn">
+                <img src="./data/AIイメージ.png" class="imgBtn">
             </div>
             <div class="box-HumanPrediction"><div class="box-text">Human Prediction</div>
                 <img src="./imgFolder/keiba_kansen.png" class="imgBtn">
