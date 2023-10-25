@@ -42,7 +42,7 @@
     <footer>
         <div class="footer-menu">
             <ul class="footer-menu-list">
-                <li><img src="./imgFolder/keiba_jockey5_yellow.png"></li>
+                <li><img src="./data/keiba_jockey5_yellow.png"></li>
                 <li>Home</li>
                 <li>Others</li>
                 <li>Others</li>
