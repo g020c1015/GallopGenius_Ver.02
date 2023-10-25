@@ -38,19 +38,19 @@
                 <img src="./data/AIイメージ.png" class="imgBtn">
             </div>
             <div class="box-HumanPrediction"><div class="box-text">Human Prediction</div>
-                <img src="./imgFolder/keiba_kansen.png" class="imgBtn">
+                <img src="./data/keiba_kansen.png" class="imgBtn">
             </div>
             <div class="box-HorseList"><div class="box-text">Horse List</div>
-                <img src="./imgFolder/3連複.png" class="imgBtn">
+                <img src="./data/3連複.png" class="imgBtn">
             </div>
             <div class="box-RecoveryRate"><div class="box-text">Recovery Rate</div>
-                <img src="./imgFolder/keiba_baken.png" class="imgBtn">
+                <img src="./data/keiba_baken.png" class="imgBtn">
             </div>
             <div class="box-RaceCalender"><div class="box-text">Race Calender</div>
-                <img src="./imgFolder/カレンダー.png" class="imgBtn">
+                <img src="./data/カレンダー.png" class="imgBtn">
             </div>
             <div class="box-Others"><div class="box-text">Others</div>
-                <img src="./imgFolder/keiba_kansen.png" class="imgBtn">
+                <img src="./data/keiba_kansen.png" class="imgBtn">
             </div>
         </div>
     </main>
@@ -58,13 +58,13 @@
     <footer>
         <div class="footer-menu">
             <ul class="footer-menu-list">
-                <li><img src="./imgFolder/keiba_jockey5_yellow.png"></li>
+                <li><img src="./data/keiba_jockey5_yellow.png"></li>
                 <li>Home</li>
                 <li>Others</li>
                 <li>Others</li>
                 <li>Others</li>
                 <li>Home</li>
-                <li><img src="./imgFolder/keiba_jockey1_white.png"></li>
+                <li><img src="./data/keiba_jockey1_white.png"></li>
             </ul>
         </div>
     </footer>
