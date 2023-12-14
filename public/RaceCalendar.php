@@ -7,19 +7,22 @@
     <link rel="stylesheet" href="./index.css">
     <title>Gallop Genius</title>
 </head>
-<body>
+<body  background="./imgFolder/keiba背景_パドック.jpg">
 <div class="wrapper">
     <!--header-->
     <header>
-    <div class="headerText">
-        Gallop Genius
-    </div>
+        <div class="headerText">
+            <a href="./basic.php">
+                Gallop Genius
+            </a>
+        </div>
         <div class="hamburger-menu">
             <input type="checkbox" id="menu-btn-check">
             <label for="menu-btn-check" class="menu-btn"><span></span></label>
         <!--menuの中身-->
         <div class="menu-content">
             <ul>
+                <li><a href="./index.php">Home</a></li>
                 <li><a href="./AIP.php">AI Prediction</a></li>
                 <li><a href="./HumanP.php">Human Prediction</a></li>
                 <li><a href="./HorseList.php">Horse List</a></li>
@@ -31,18 +34,101 @@
         </div>
     </header>
     <main>
+
     <!--本文-->
     <!--ココから書き換えてください-->
     <div class="mainFrame">
-        <div class="RCtext">-Race Calender-</div>
-        <div id="raceDate"></div>
+        <div class="titleText">-Race Calender-</div>
+        <!--G1.G2.G3の直近の予定-->
+        <div class="boxArea-calender">
+            <!--G1-->
+            <div class="currentRace" id="g1">
+                <div class="g1-race-glade">G1</div>
+                <?PhP 
+                //データベースに接続
+                try{
+                    $db = new PDO('mysql:dbname=race;host=localhost;charset=utf8','root','root');
+                }catch(PDOException $e){
+                    echo $e->getMessage();
+                }
+                $entry = $db->query('SELECT min(DATE_FORMAT(日付, "%D %W")) as 日付, レース名, 格 FROM race.racecalendar WHERE 格="G1" AND month(日付) = month(current_date()) AND date(日付) >= date(current_date());');
+                ?>
+                <?php while($resister = $entry->fetch()): ?>
+                    <div class="race-name">
+                        <?php print($resister["レース名"]) ?>
+                    </div>
+                    <div class="race-date">
+                        <?php print($resister["日付"])?>
+                    </div>
+                <?php endwhile; ?>
+            </div>
+            <!--G2-->
+            <div class="currentRace" id="g2">
+                <div class="g2-race-glade">G2</div>
+                <?PhP 
+                //データベースに接続
+                try{
+                    $db = new PDO('mysql:dbname=race;host=localhost;charset=utf8','root','root');
+                }catch(PDOException $e){
+                    echo $e->getMessage();
+                }
+                $entry = $db->query('SELECT min(DATE_FORMAT(日付, "%D %W")) as 日付, レース名, 格 FROM race.racecalendar WHERE 格="G2" AND month(日付) = month(current_date()) AND date(日付) >= date(current_date());');
+                ?>
+                <?php while($resister = $entry->fetch()): ?>
+                    <div class="race-name">
+                        <?php print($resister["レース名"]) ?>
+                    </div>
+                    <div class="race-date">
+                        <?php print($resister["日付"])?>
+                    </div>
+                <?php endwhile; ?>
+            </div>
+            <!--G3-->
+            <div class="currentRace" id="g3">
+                <div class="g1-race-glade">G3</div>
+                <?PhP 
+                //データベースに接続
+                try{
+                    $db = new PDO('mysql:dbname=race;host=localhost;charset=utf8','root','root');
+                }catch(PDOException $e){
+                    echo $e->getMessage();
+                }
+                $entry = $db->query('SELECT min(DATE_FORMAT(日付, "%D %W")) as 日付, レース名, 格 FROM race.racecalendar WHERE 格="G3" AND month(日付) = month(current_date()) AND date(日付) >= date(current_date());');
+                ?>
+                <?php while($resister = $entry->fetch()): ?>
+                    <div class="race-name">
+                        <?php print($resister["レース名"]) ?>
+                    </div>
+                    <div class="race-date">
+                        <?php print($resister["日付"])?>
+                    </div>
+                <?php endwhile; ?>
+            </div>
+            <!--今月のレース一覧-->
+            <div class="race-month">
+            <?PhP 
+                //データベースに接続
+                try{
+                    $db = new PDO('mysql:dbname=race;host=localhost;charset=utf8','root','root');
+                }catch(PDOException $e){
+                    echo $e->getMessage();
+                }
+                $entry = $db->query('SELECT DATE_FORMAT(日付, "%D %a") as 日付, レース名, 格 FROM race.racecalendar WHERE month(日付) = month(current_date());');
+            ?>
+            <?php while($resister = $entry->fetch()): ?>
+                <div class="race-date-month">
+                    <?php print($resister["格"])?><?php print($resister["レース名"]) ?><?php print($resister["日付"])?>
+                </div>
+            <?php endwhile; ?>
+            </div>
+        </div>
     </div>
     </main>
     <!--footer-->
     <footer>
         <div class="footer-menu">
             <ul class="footer-menu-list">
-                <li><img src="./data/keiba_jockey5_yellow.png"></li>
+                <li><img src="./imgFolder/keiba_jockey5_yellow.png"></li>
                 <li>Home</li>
                 <li>Others</li>
                 <li>Others</li>
@@ -53,21 +139,10 @@
         </div>
     </footer>
 </div>
+
+<!--script-->
 <script>
-    const output_svg = document.getElementById('raceDate');
 
-function csv_data(dataPath) {
-	const request = new XMLHttpRequest(); // HTTPでファイルを読み込む
-	request.addEventListener('load', (event) => { // ロードさせ実行
-		const response = event.target.responseText; // 受け取ったテキストを返す
-		output_svg.innerHTML = response; // 表示
-	});
-	request.open('GET', dataPath, true); // csvのパスを指定
-	request.send();
-}
-csv_data('race_date.csv');
 </script>
-
-
 </body>
 </html>
