@@ -7,20 +7,22 @@
     <link rel="stylesheet" href="./index.css">
     <title>Gallop Genius</title>
 </head>
-<body>
-<script src="./Ojs.js"></script>
+<body background="./imgFolder/keiba背景4-2.jpg">
 <div class="wrapper">
     <!--header-->
     <header>
-    <div class="headerText">
-        Gallop Genius
-    </div>
+        <div class="headerText">
+            <a href="./basic.php">
+                Gallop Genius
+            </a>
+        </div>
         <div class="hamburger-menu">
             <input type="checkbox" id="menu-btn-check">
             <label for="menu-btn-check" class="menu-btn"><span></span></label>
         <!--menuの中身-->
         <div class="menu-content">
             <ul>
+                <li><a href="./index.php">Home</a></li>
                 <li><a href="./AIP.php">AI Prediction</a></li>
                 <li><a href="./HumanP.php">Human Prediction</a></li>
                 <li><a href="./HorseList.php">Horse List</a></li>
@@ -36,19 +38,32 @@
     <!--ココから書き換えてください-->
     
     <div class="mainFrame">
-        <div class="OText" class="fade-in-right">
+        <div class="text_other" class="fade-in-right">
             -Gallop Genius-
         </div>
-        <div class="OText2">
+        <div class="text_other2">
             競馬初心者でも簡単に利用できる予想AI
         </div>
-        <div class="OText" class="fade-in-right">
+        <div class="text_other" class="fade-in-right">
             -Member-
         </div>
-        <div class="OText2">
-            Hirano__Shogo　　　　　Nagashima__Shun<br/>
-            <p></p>
-            Tachi__Yunosuke　　　　Kikuchi__Yuto
+        <div class="text_other2">
+            <div class="member">
+                <img src="./imgFolder/keiba_uma_character1.png" class="img_uma">
+                Hirano_Shogo
+            </div>
+            <div class="member">
+                <img src="./imgFolder/keiba_uma_character4.png" class="img_uma">
+                Nagashima_Shun
+            </div>
+            <div class="member">
+                <img src="./imgFolder/keiba_uma_character6.png" class="img_uma">
+                Tachi_Yunosuke
+            </div>
+            <div class="member">
+                <img src="./imgFolder/keiba_uma_character7.png" class="img_uma">
+                Kikuchi_Yuto
+            </div>
         </div>
         <div class="OText" class="fade-in-right">
             -Outline-
@@ -59,13 +74,13 @@
     <footer>
         <div class="footer-menu">
             <ul class="footer-menu-list">
-                <li><img src="./data/keiba_jockey5_yellow.png"></li>
+                <li><img src="./imgFolder/keiba_jockey5_yellow.png"></li>
                 <li>Home</li>
                 <li>Others</li>
                 <li>Others</li>
                 <li>Others</li>
                 <li>Home</li>
-                <li><img src="./data/keiba_jockey1_white.png"></li>
+                <li><img src="./imgFolder/keiba_jockey1_white.png"></li>
             </ul>
         </div>
     </footer>
