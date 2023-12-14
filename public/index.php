@@ -13,7 +13,7 @@
     <!--header-->
     <header>
         <div class="headerText">
-            <a href="./basic.php">
+            <a href="./index.php">
                 Gallop Genius
             </a>
         </div>
