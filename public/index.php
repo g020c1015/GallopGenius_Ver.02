@@ -7,20 +7,24 @@
     <link rel="stylesheet" href="./index.css">
     <title>Gallop Genius</title>
 </head>
-<body>
+<body background="./imgFolder/keiba背景_ゴール直前.jpg">
+
 <div class="wrapper">
     <!--header-->
     <header>
-    <div class="headerText">
-        Gallop Genius
-    </div>
+        <div class="headerText">
+            <a href="./basic.php">
+                Gallop Genius
+            </a>
+        </div>
         <div class="hamburger-menu">
             <input type="checkbox" id="menu-btn-check">
             <label for="menu-btn-check" class="menu-btn"><span></span></label>
         <!--menuの中身-->
         <div class="menu-content">
             <ul>
-                <li><a href="./AIP.php">AI Prediction</a></li>
+                <li><a href="./index.php">Home</a></li>
+                <li><a href="./AIP.php">Gallop Genius</a></li>
                 <li><a href="./HumanP.php">Human Prediction</a></li>
                 <li><a href="./HorseList.php">Horse List</a></li>
                 <li><a href="./AIP.php">AI Recovery Rate</a></li>
@@ -34,23 +38,36 @@
     <!--本文-->
     <!--ボタン６つ配置-->
         <div class="boxArea">
-            <div class="box-AIPrediction"><div class="box-text">AI Prediction</div>
-                <img src="./data/AIイメージ.png" class="imgBtn">
+            <div class="box-AIPrediction">
+                <a href="./AIP.php">
+                    Gallop Genius<br/>
+                    
+                </a>
             </div>
-            <div class="box-HumanPrediction"><div class="box-text">Human Prediction</div>
-                <img src="./data/keiba_kansen.png" class="imgBtn">
+            <div class="box-HumanPrediction">
+                <a href="./HumanP.php">
+                    Nakanohito
+                </a>
             </div>
-            <div class="box-HorseList"><div class="box-text">Horse List</div>
-                <img src="./data/3連複.png" class="imgBtn">
+            <div class="box-HorseList">
+                <a href="./HorseList.php">
+                    Horse List
+                </a>
             </div>
-            <div class="box-RecoveryRate"><div class="box-text">Recovery Rate</div>
-                <img src="./data/keiba_baken.png" class="imgBtn">
+            <div class="box-RecoveryRate">
+                <a href="./AIRR.php">
+                    Recovery Rate
+                </a>
             </div>
-            <div class="box-RaceCalender"><div class="box-text">Race Calender</div>
-                <img src="./data/カレンダー.png" class="imgBtn">
+            <div class="box-RaceCalender">
+                <a href="./RaceCalendar.php">
+                    Race Calender
+                </a>
             </div>
-            <div class="box-Others"><div class="box-text">Others</div>
-                <img src="./data/keiba_kansen.png" class="imgBtn">
+            <div class="box-Others">
+                <a href="./Others.php">
+                    Others
+                </a>
             </div>
         </div>
     </main>
@@ -58,13 +75,13 @@
     <footer>
         <div class="footer-menu">
             <ul class="footer-menu-list">
-                <li><img src="./data/keiba_jockey5_yellow.png"></li>
+                <li><img src="./imgFolder/keiba_jockey5_yellow.png"></li>
                 <li>Home</li>
                 <li>Others</li>
                 <li>Others</li>
                 <li>Others</li>
                 <li>Home</li>
-                <li><img src="./data/keiba_jockey1_white.png"></li>
+                <li><img src="./imgFolder/keiba_jockey1_white.png"></li>
             </ul>
         </div>
     </footer>
