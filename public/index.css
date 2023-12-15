@@ -394,8 +394,6 @@
 		padding-top: 10px;
 		vertical-align: top;
 	}
-
-
 	.race-month{
 		font-family: 'Ubuntu Mono', monospace;
 		color:#ffffff;
@@ -407,7 +405,6 @@
 	.race-date-month{
 		font-size: 30px;
 	}
-
 
 	/*others用テキストcss*/
 	.text_other{
@@ -433,7 +430,8 @@
 		margin-bottom: 10px;
 		display: inline-block;
 	}
-
+	
+	/*中の人予想*/
 	.nakanohito{
 		display: inline-block;
 	}
