@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./index.css">
     <title>Gallop Genius</title>
 </head>
-<body background="./imgFolder/keiba背景_パドック.jpg">
+<body background="./data/keiba背景_パドック.jpg">
 <div class="wrapper">
     <!--header-->
     <header>
@@ -40,7 +40,7 @@
         <div class="titleText">
             <div class="nakanohito">
                 <p>
-                    <img src="./imgFolder/keiba_uma_character7.png" class="img_nakanohito">
+                    <img src="./data/keiba_uma_character7.png" class="img_nakanohito">
                     kikuchi_Yutoの予想
                 </p>
 
@@ -122,13 +122,13 @@
     <footer>
         <div class="footer-menu">
             <ul class="footer-menu-list">
-                <li><img src="./imgFolder/keiba_jockey5_yellow.png"></li>
+                <li><img src="./data/keiba_jockey5_yellow.png"></li>
                 <li>Home</li>
                 <li>Others</li>
                 <li>Others</li>
                 <li>Others</li>
                 <li>Home</li>
-                <li><img src="./imgFolder/keiba_jockey1_white.png"></li>
+                <li><img src="./data/keiba_jockey1_white.png"></li>
             </ul>
         </div>
     </footer>
