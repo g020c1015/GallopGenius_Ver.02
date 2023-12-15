@@ -181,7 +181,7 @@
 
 	/*ボタン用css*/
 	.box-AIPrediction{
-		width: 75%;
+		width: 90%;
 		height: 170px;
 		border: solid 10px #ffffff;
 		border-radius: 45px;
@@ -207,7 +207,7 @@
 	}
 	
 	.box-HumanPrediction{
-		width: 75%;
+		width: 90%;
 		height: 170px;
 		border: solid 10px #ffffff;
 		border-radius:45px;
@@ -232,7 +232,7 @@
 	}
 
 	.box-HorseList{
-		width: 75%;
+		width: 90%;
 		height: 170px;
 		border: solid 10px #ffffff;
 		border-radius:45px;
@@ -257,7 +257,7 @@
 	}
 
 	.box-RecoveryRate{
-		width: 75%;
+		width: 90%;
 		height: 170px;
 		border: solid 10px #ffffff;
 		border-radius:45px;
@@ -282,7 +282,7 @@
 	}
 
 	.box-RaceCalender{
-		width: 75%;
+		width: 90%;
 		height: 170px;
 		border: solid 10px #ffffff;
 		border-radius:45px;
@@ -307,7 +307,7 @@
 	}
 
 	.box-Others{
-		width: 75%;
+		width: 90%;
 		height: 170px;
 		border: solid 10px #ffffff;
 		border-radius:45px;
