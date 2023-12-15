@@ -1,6 +1,949 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+/*スマホサイズ*/
+@media screen and(max-width:480px){
+	header{
+		position: fixed; /*ヘッダー固定*/
+		top: 0;
+		left:0;
+		width: 100%;
+		height: 12vh;
+		background-color: #023015;
+		font-size: 30px;
+		font-family:'Ubuntu Mono', monospace;
+		font-weight: bold;
+		color: #ffffff;
+		text-decoration: none;
+	}
+	.headerText{
+		height: 12vh;
+		display: flex;
+		align-items: center;
+		padding-left: 20px;
+	}
+	.headerText a{
+		text-decoration: none;
+		color: #ffffff;
+	}
+
+	/*ハンバーガーメニューボタンの設定*/
+	.menu-btn{
+		top: 0%;
+		position: fixed;
+		right: 10px;
+		display: flex;
+		align-items: center;
+		height: 12vh;
+		width: 60px;
+		justify-content: center;
+		z-index: 100;
+	}
+	.menu-btn span,
+	.menu-btn span:before,
+	.menu-btn span:after {
+		content: '';
+		display: block;
+		height: 3px;
+		width: 25px;
+		border-radius: 3px;
+		background-color: #ffffff;
+		position: absolute;
+	}
+	.menu-btn span:before {
+		bottom: 8px;
+	}
+	.menu-btn span:after {
+		top: 8px;
+	}
+	/*☓マークに変える設定*/
+	#menu-btn-check:checked ~ .menu-btn span {
+		background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+	}
+	#menu-btn-check:checked ~ .menu-btn span::before {
+		bottom: 0;
+		transform: rotate(45deg);
+	}
+	#menu-btn-check:checked ~ .menu-btn span::after {
+		top: 0;
+		transform: rotate(-45deg);
+	}
+	/*チェックボックスを隠す*/
+	#menu-btn-check{
+		display: none;
+	}
+
+	/*メニュー中身*/
+	.menu-content {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		top: 0;
+		left: 70%;
+		z-index: 90;
+		background-color: #023015;
+		font-family:'Ubuntu Mono', monospace;
+	}
+	.menu-content ul {
+		padding: 70px 10px 0;
+	}
+	.menu-content ul li {
+		border-bottom: dotted 3px #ffffff;
+		list-style: none;
+	}
+	.menu-content ul li a {
+		display: block;
+		width: 100%;
+		font-size: 20px;
+		box-sizing: border-box;
+		color:#ffffff;
+		text-decoration: none;
+		padding: 9px 15px 10px 0;
+		position: relative;
+	}
+
+	.menu-content {
+		width: 30%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 100%;
+		z-index: 90;
+		background-color: #023015;
+		transition: all 0.5s;/*アニメーション設定*/
+	}
+	#menu-btn-check:checked ~ .menu-content {
+		left: 70%;/*メニューを画面内へ*/
+	}
+
+	.wrapper{
+		height: 100%;
+		min-height: 100vh;
+		position: relative;
+		box-sizing: border-box;
+	}
 
 
+	/*フッタ―*/
+	footer{
+		width: 100%;
+		height: 12vh;
+		bottom: 0;
+		background-color: #DBE6E0;
+		color: #023015;
+		font-size: 15px;
+		font-weight: bold;
+		font-family:'Ubuntu Mono', monospace;
+	}
+	.footer-menu {
+		height: 60;
+		align-items: center;
+	}
+	.footer-menu-list {
+		list-style: none;
+		text-align: center;
+		line-height: 60px;
+	}
+	.footer-menu-list li {
+		margin: 10px;
+		display: inline;
+		vertical-align: middle;
+	}
+
+	/*img設定*/
+	img{
+		width: 70px;
+		height: 70px;
+	}
+	body{
+		margin: 0;
+		background-size: cover;
+		background-repeat: no-repeat;
+		
+	}
+	
+	/*本文css*/
+	/*main{
+		margin-top: 10%;
+		margin-bottom: 20%;
+	}*/
+
+
+	/*図形を並べるcss*/
+	.boxArea{
+		font-family: 'Ubuntu Mono', monospace;
+		font-size: 70px;
+		font-weight: bold;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		align-items: center;
+		padding: 15px;
+	}
+
+	/*ボタン用css*/
+	.box-AIPrediction{
+		width: 30%;
+		height: 170px;
+		border: solid 10px #ffffff;
+		border-radius: 45px;
+		margin: 10px;
+		box-sizing: border-box;
+		text-align: center;
+	}
+	.box-AIPrediction a{
+		color: #ffffff;
+		text-decoration: none;
+		text-align: center;
+		display: block;
+		border-radius: 30px;
+		top: 0;
+		left: 0;
+		height:100%;
+		width: 100%;
+	}
+	.box-AIPrediction a:hover{
+		background-color: #000000;
+		opacity: 0.1;
+		transition: background-color 0.7s;
+	}
+	
+	.box-HumanPrediction{
+		width: 30%;
+		height: 170px;
+		border: solid 10px #ffffff;
+		border-radius:45px;
+		margin: 10px;
+		box-sizing: border-box;
+	}
+	.box-HumanPrediction a{
+		color: #ffffff;
+		text-decoration: none;
+		text-align: center;
+		display: block;
+		border-radius: 30px;
+		top: 0;
+		left: 0;
+		height:100%;
+		width: 100%;
+	}
+	.box-HumanPrediction a:hover{
+		background-color: #000000;
+		opacity: 0.1;
+		transition: background-color 0.7s;
+	}
+
+	.box-HorseList{
+		width: 30%;
+		height: 170px;
+		border: solid 10px #ffffff;
+		border-radius:45px;
+		margin: 10px;
+		box-sizing: border-box;
+	}
+	.box-HorseList a{
+		color: #ffffff;
+		text-decoration: none;
+		text-align: center;
+		display: block;
+		border-radius: 30px;
+		top: 0;
+		left: 0;
+		height:100%;
+		width: 100%;
+	}
+	.box-HorseList a:hover{
+		background-color: #000000;
+		opacity: 0.1;
+		transition: background-color 0.7s;
+	}
+
+	.box-RecoveryRate{
+		width: 30%;
+		height: 170px;
+		border: solid 10px #ffffff;
+		border-radius:45px;
+		margin: 10px;
+		box-sizing: border-box;
+	}
+	.box-RecoveryRate a{
+		color: #ffffff;
+		text-decoration: none;
+		text-align: center;
+		display: block;
+		border-radius: 30px;
+		top: 0;
+		left: 0;
+		height:100%;
+		width: 100%;
+	}
+	.box-RecoveryRate a:hover{
+		background-color: #000000;
+		opacity: 0.1;
+		transition: background-color 0.7s;
+	}
+
+	.box-RaceCalender{
+		width: 30%;
+		height: 170px;
+		border: solid 10px #ffffff;
+		border-radius:45px;
+		margin: 10px;
+		box-sizing: border-box;
+	}
+	.box-RaceCalender a{
+		color: #ffffff;
+		text-decoration: none;
+		text-align: center;
+		display: block;
+		border-radius: 30px;
+		top: 0;
+		left: 0;
+		height:100%;
+		width: 100%;
+	}
+	.box-RaceCalender a:hover{
+		background-color: #000000;
+		opacity: 0.1;
+		transition: background-color 0.7s;
+	}
+
+	.box-Others{
+		width: 30%;
+		height: 170px;
+		border: solid 10px #ffffff;
+		border-radius:45px;
+		margin: 10px;
+		box-sizing: border-box;
+		
+	}
+	.box-Others a{
+		color: #ffffff;
+		text-decoration: none;
+		text-align: center;
+		display: block;
+		border-radius: 30px;
+		top: 0;
+		left: 0;
+		height:100%;
+		width: 100%;
+	}
+	.box-Others a:hover{
+		background-color: #000000;
+		opacity: 0.1;
+		transition: background-color 0.7s;
+	}
+
+	/*hover設定*/
+	/*マウスをかざしたときに薄いイメージ画像(縁あり)を表示*/
+	.box-AIPrediction .imgBtn:hover{
+		opacity: 0.2;
+		transition: all 0.6s ease;
+	}
+	.box-HumanPrediction .imgBtn:hover{
+		opacity: 0.2;
+		transition: all 0.6s ease;
+	}
+	.box-HorseList .imgBtn:hover{
+		opacity: 0.2;
+		transition: all 0.6s ease;
+	}
+	.box-RaceCalender .imgBtn:hover{
+		opacity: 0.2;
+		transition: all 0.6s ease;
+	}
+	.box-RecoveryRate .imgBtn:hover{
+		opacity: 0.2;
+		transition: all 0.6s ease;
+	}
+	.box-Others .imgBtn:hover:hover{
+		opacity: 0.2;
+		transition: all 0.6s ease;
+	}
+
+	/*mainFrame・titleText共通css*/
+	
+	.mainFrame{
+		margin: 5% 5% 20%;
+		border-radius: 30px;
+		border: solid 10px #ffffff;
+		font-family: 'Ubuntu Mono', monospace;
+	}
+	.titleText{
+		font-family: 'Ubuntu Mono', monospace;
+		text-align:center;
+		font-size: 60px;
+		color:#ffffff;
+		font-weight: bold;
+	}
+
+
+	/*予想用css*/
+	/*Race Calender用css*/
+	
+	.boxArea-calender{
+		text-align: center;
+	}
+	.currentRace{
+		font-family: 'Ubuntu Mono', monospace;
+		color:#ffffff;
+		display: inline-block;
+		width: 32%;
+		height: 200px;
+		border-radius: 30px;
+		font-weight: bold;
+		font-size: 44px;
+		padding-top: 10px;
+		vertical-align: top;
+	}
+
+
+	.race-month{
+		font-family: 'Ubuntu Mono', monospace;
+		color:#ffffff;
+		width: 98%;
+		font-weight: bold;
+		margin: 1% 1% 20px;
+		border-radius: 30px;
+	}
+	.race-date-month{
+		font-size: 30px;
+	}
+
+
+	/*others用テキストcss*/
+	.text_other{
+		color: #ffffff;
+		font-weight: bold;
+		font-size: 60px;
+		margin-top: 5%;
+		margin-left: 5%;
+	}
+	.text_other2{
+		color: #ffffff;
+		font-weight: bold;
+		font-size: 45px;
+		margin-top: 5%;
+		text-align: center;
+	}
+	.img_uma{
+		height: 200px;
+		width: 140px;
+	}
+	.member{
+		width: 40%;
+		margin-bottom: 10px;
+		display: inline-block;
+	}
+
+	.nakanohito{
+		display: inline-block;
+	}
+	.img_nakanohito{
+		vertical-align: middle;
+		height: 200px;
+		width: 140px;
+	}
+	.nakanohito{
+		color: #ffffff;
+		font-weight: bold;
+		font-size: 60px;
+	}
+	.space{
+		font-size: 30px;
+	}
+	.reason{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	/*出馬表*/
+	.horse_data{
+		font-family: 'Ubuntu Mono', monospace;
+		font-size: 60px;
+		font-weight: bold;
+		color: #ffffff;
+		text-align: left;
+		margin-left: 25%;
+	}
+	.horse_data .jockey_name{
+		font-size: 30px;
+	}
+
+	/*回収率*/
+	.text_kaisyuritu{
+	}
+}
+@media screen and(max-width:960px){
+	header{
+		position: fixed; /*ヘッダー固定*/
+		top: 0;
+		left:0;
+		width: 100%;
+		height: 12vh;
+		background-color: #023015;
+		font-size: 7vh;
+		font-family:'Ubuntu Mono', monospace;
+		font-weight: bold;
+		color: #ffffff;
+		text-decoration: none;
+	}
+	.headerText{
+		height: 12vh;
+		display: flex;
+		align-items: center;
+		padding-left: 20px;
+	}
+	.headerText a{
+		text-decoration: none;
+		color: #ffffff;
+	}
+
+	/*ハンバーガーメニューボタンの設定*/
+	.menu-btn{
+		top: 0%;
+		position: fixed;
+		right: 10px;
+		display: flex;
+		align-items: center;
+		height: 12vh;
+		width: 60px;
+		justify-content: center;
+		z-index: 100;
+	}
+	.menu-btn span,
+	.menu-btn span:before,
+	.menu-btn span:after {
+		content: '';
+		display: block;
+		height: 3px;
+		width: 25px;
+		border-radius: 3px;
+		background-color: #ffffff;
+		position: absolute;
+	}
+	.menu-btn span:before {
+		bottom: 8px;
+	}
+	.menu-btn span:after {
+		top: 8px;
+	}
+	/*☓マークに変える設定*/
+	#menu-btn-check:checked ~ .menu-btn span {
+		background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+	}
+	#menu-btn-check:checked ~ .menu-btn span::before {
+		bottom: 0;
+		transform: rotate(45deg);
+	}
+	#menu-btn-check:checked ~ .menu-btn span::after {
+		top: 0;
+		transform: rotate(-45deg);
+	}
+	/*チェックボックスを隠す*/
+	#menu-btn-check{
+		display: none;
+	}
+
+	/*メニュー中身*/
+	.menu-content {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		top: 0;
+		left: 70%;
+		z-index: 90;
+		background-color: #023015;
+		font-family:'Ubuntu Mono', monospace;
+	}
+	.menu-content ul {
+		padding: 70px 10px 0;
+	}
+	.menu-content ul li {
+		border-bottom: dotted 3px #ffffff;
+		list-style: none;
+	}
+	.menu-content ul li a {
+		display: block;
+		width: 100%;
+		font-size: 20px;
+		box-sizing: border-box;
+		color:#ffffff;
+		text-decoration: none;
+		padding: 9px 15px 10px 0;
+		position: relative;
+	}
+
+	.menu-content {
+		width: 30%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 100%;
+		z-index: 90;
+		background-color: #023015;
+		transition: all 0.5s;/*アニメーション設定*/
+	}
+	#menu-btn-check:checked ~ .menu-content {
+		left: 70%;/*メニューを画面内へ*/
+	}
+
+	.wrapper{
+		height: 100%;
+		min-height: 100vh;
+		position: relative;
+		box-sizing: border-box;
+	}
+
+
+	/*フッタ―*/
+	footer{
+		width: 100%;
+		height: 12vh;
+		bottom: 0;
+		background-color: #DBE6E0;
+		color: #023015;
+		font-size: 15px;
+		font-weight: bold;
+		font-family:'Ubuntu Mono', monospace;
+	}
+	.footer-menu {
+		height: 60;
+		align-items: center;
+	}
+	.footer-menu-list {
+		list-style: none;
+		text-align: center;
+		line-height: 60px;
+	}
+	.footer-menu-list li {
+		margin: 10px;
+		display: inline;
+		vertical-align: middle;
+	}
+
+	/*img設定*/
+	img{
+		width: 70px;
+		height: 70px;
+	}
+	body{
+		margin: 0;
+		background-size: cover;
+		background-repeat: no-repeat;
+		
+	}
+	
+	/*本文css*/
+	/*main{
+		margin-top: 10%;
+		margin-bottom: 20%;
+	}*/
+
+
+	/*図形を並べるcss*/
+	.boxArea{
+		font-family: 'Ubuntu Mono', monospace;
+		font-size: 70px;
+		font-weight: bold;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		align-items: center;
+		padding: 15px;
+	}
+
+	/*ボタン用css*/
+	.box-AIPrediction{
+		width: 30%;
+		height: 170px;
+		border: solid 10px #ffffff;
+		border-radius: 45px;
+		margin: 10px;
+		box-sizing: border-box;
+		text-align: center;
+	}
+	.box-AIPrediction a{
+		color: #ffffff;
+		text-decoration: none;
+		text-align: center;
+		display: block;
+		border-radius: 30px;
+		top: 0;
+		left: 0;
+		height:100%;
+		width: 100%;
+	}
+	.box-AIPrediction a:hover{
+		background-color: #000000;
+		opacity: 0.1;
+		transition: background-color 0.7s;
+	}
+	
+	.box-HumanPrediction{
+		width: 30%;
+		height: 170px;
+		border: solid 10px #ffffff;
+		border-radius:45px;
+		margin: 10px;
+		box-sizing: border-box;
+	}
+	.box-HumanPrediction a{
+		color: #ffffff;
+		text-decoration: none;
+		text-align: center;
+		display: block;
+		border-radius: 30px;
+		top: 0;
+		left: 0;
+		height:100%;
+		width: 100%;
+	}
+	.box-HumanPrediction a:hover{
+		background-color: #000000;
+		opacity: 0.1;
+		transition: background-color 0.7s;
+	}
+
+	.box-HorseList{
+		width: 30%;
+		height: 170px;
+		border: solid 10px #ffffff;
+		border-radius:45px;
+		margin: 10px;
+		box-sizing: border-box;
+	}
+	.box-HorseList a{
+		color: #ffffff;
+		text-decoration: none;
+		text-align: center;
+		display: block;
+		border-radius: 30px;
+		top: 0;
+		left: 0;
+		height:100%;
+		width: 100%;
+	}
+	.box-HorseList a:hover{
+		background-color: #000000;
+		opacity: 0.1;
+		transition: background-color 0.7s;
+	}
+
+	.box-RecoveryRate{
+		width: 30%;
+		height: 170px;
+		border: solid 10px #ffffff;
+		border-radius:45px;
+		margin: 10px;
+		box-sizing: border-box;
+	}
+	.box-RecoveryRate a{
+		color: #ffffff;
+		text-decoration: none;
+		text-align: center;
+		display: block;
+		border-radius: 30px;
+		top: 0;
+		left: 0;
+		height:100%;
+		width: 100%;
+	}
+	.box-RecoveryRate a:hover{
+		background-color: #000000;
+		opacity: 0.1;
+		transition: background-color 0.7s;
+	}
+
+	.box-RaceCalender{
+		width: 30%;
+		height: 170px;
+		border: solid 10px #ffffff;
+		border-radius:45px;
+		margin: 10px;
+		box-sizing: border-box;
+	}
+	.box-RaceCalender a{
+		color: #ffffff;
+		text-decoration: none;
+		text-align: center;
+		display: block;
+		border-radius: 30px;
+		top: 0;
+		left: 0;
+		height:100%;
+		width: 100%;
+	}
+	.box-RaceCalender a:hover{
+		background-color: #000000;
+		opacity: 0.1;
+		transition: background-color 0.7s;
+	}
+
+	.box-Others{
+		width: 30%;
+		height: 170px;
+		border: solid 10px #ffffff;
+		border-radius:45px;
+		margin: 10px;
+		box-sizing: border-box;
+		
+	}
+	.box-Others a{
+		color: #ffffff;
+		text-decoration: none;
+		text-align: center;
+		display: block;
+		border-radius: 30px;
+		top: 0;
+		left: 0;
+		height:100%;
+		width: 100%;
+	}
+	.box-Others a:hover{
+		background-color: #000000;
+		opacity: 0.1;
+		transition: background-color 0.7s;
+	}
+
+	/*hover設定*/
+	/*マウスをかざしたときに薄いイメージ画像(縁あり)を表示*/
+	.box-AIPrediction .imgBtn:hover{
+		opacity: 0.2;
+		transition: all 0.6s ease;
+	}
+	.box-HumanPrediction .imgBtn:hover{
+		opacity: 0.2;
+		transition: all 0.6s ease;
+	}
+	.box-HorseList .imgBtn:hover{
+		opacity: 0.2;
+		transition: all 0.6s ease;
+	}
+	.box-RaceCalender .imgBtn:hover{
+		opacity: 0.2;
+		transition: all 0.6s ease;
+	}
+	.box-RecoveryRate .imgBtn:hover{
+		opacity: 0.2;
+		transition: all 0.6s ease;
+	}
+	.box-Others .imgBtn:hover:hover{
+		opacity: 0.2;
+		transition: all 0.6s ease;
+	}
+
+	/*mainFrame・titleText共通css*/
+	
+	.mainFrame{
+		margin: 5% 5% 20%;
+		border-radius: 30px;
+		border: solid 10px #ffffff;
+		font-family: 'Ubuntu Mono', monospace;
+	}
+	.titleText{
+		font-family: 'Ubuntu Mono', monospace;
+		text-align:center;
+		font-size: 60px;
+		color:#ffffff;
+		font-weight: bold;
+	}
+
+
+	/*予想用css*/
+	/*Race Calender用css*/
+	
+	.boxArea-calender{
+		text-align: center;
+	}
+	.currentRace{
+		font-family: 'Ubuntu Mono', monospace;
+		color:#ffffff;
+		display: inline-block;
+		width: 32%;
+		height: 200px;
+		border-radius: 30px;
+		font-weight: bold;
+		font-size: 44px;
+		padding-top: 10px;
+		vertical-align: top;
+	}
+
+
+	.race-month{
+		font-family: 'Ubuntu Mono', monospace;
+		color:#ffffff;
+		width: 98%;
+		font-weight: bold;
+		margin: 1% 1% 20px;
+		border-radius: 30px;
+	}
+	.race-date-month{
+		font-size: 30px;
+	}
+
+
+	/*others用テキストcss*/
+	.text_other{
+		color: #ffffff;
+		font-weight: bold;
+		font-size: 60px;
+		margin-top: 5%;
+		margin-left: 5%;
+	}
+	.text_other2{
+		color: #ffffff;
+		font-weight: bold;
+		font-size: 45px;
+		margin-top: 5%;
+		text-align: center;
+	}
+	.img_uma{
+		height: 200px;
+		width: 140px;
+	}
+	.member{
+		width: 40%;
+		margin-bottom: 10px;
+		display: inline-block;
+	}
+
+	.nakanohito{
+		display: inline-block;
+	}
+	.img_nakanohito{
+		vertical-align: middle;
+		height: 200px;
+		width: 140px;
+	}
+	.nakanohito{
+		color: #ffffff;
+		font-weight: bold;
+		font-size: 60px;
+	}
+	.space{
+		font-size: 30px;
+	}
+	.reason{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	/*出馬表*/
+	.horse_data{
+		font-family: 'Ubuntu Mono', monospace;
+		font-size: 60px;
+		font-weight: bold;
+		color: #ffffff;
+		text-align: left;
+		margin-left: 25%;
+	}
+	.horse_data .jockey_name{
+		font-size: 30px;
+	}
+
+	/*回収率*/
+	.text_kaisyuritu{
+	}
+}
 @media screen{
 	header{
 		position: fixed; /*ヘッダー固定*/
