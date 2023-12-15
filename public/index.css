@@ -15,12 +15,12 @@
 		text-decoration: none;
 	}
 	.headerText{
-		height:50px; /*ヘッダー文字の高さ*/
 		display: flex;
 		align-items: center;
 		vertical-align:middle;
 	}
 	.headerText a{
+		height:50px; /*ヘッダー文字の高さ*/
 		text-decoration: none;
 		color: #ffffff;
 	}
