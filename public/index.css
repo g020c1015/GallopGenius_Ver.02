@@ -136,7 +136,6 @@
 	}
 	.footer-menu {
 		height: 60;
-		align-items: center;
 	}
 	.footer-menu-list {
 		list-style: none;
@@ -163,7 +162,7 @@
 	
 	/*本文css*/
 	main{
-		margin-top: 15%;
+		margin-top: 20%;
 		margin-bottom: 20%;
 	}
 
