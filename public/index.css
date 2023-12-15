@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
 /*スマホサイズ*/
-@media screen and(max-width: 480px){
+@media screen and(max-width:480px){
 	header{
 		position: fixed; /*ヘッダー固定*/
 		top: 0;
