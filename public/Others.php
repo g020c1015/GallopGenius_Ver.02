@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./index.css">
     <title>Gallop Genius</title>
 </head>
-<body background="./imgFolder/keiba背景4-2.jpg">
+<body background="./data/keiba背景4-2.jpg">
 <div class="wrapper">
     <!--header-->
     <header>
@@ -49,19 +49,19 @@
         </div>
         <div class="text_other2">
             <div class="member">
-                <img src="./imgFolder/keiba_uma_character1.png" class="img_uma">
+                <img src="./data/keiba_uma_character1.png" class="img_uma">
                 Hirano_Shogo
             </div>
             <div class="member">
-                <img src="./imgFolder/keiba_uma_character4.png" class="img_uma">
+                <img src="./data/keiba_uma_character4.png" class="img_uma">
                 Nagashima_Shun
             </div>
             <div class="member">
-                <img src="./imgFolder/keiba_uma_character6.png" class="img_uma">
+                <img src="./data/keiba_uma_character6.png" class="img_uma">
                 Tachi_Yunosuke
             </div>
             <div class="member">
-                <img src="./imgFolder/keiba_uma_character7.png" class="img_uma">
+                <img src="./data/keiba_uma_character7.png" class="img_uma">
                 Kikuchi_Yuto
             </div>
         </div>
@@ -74,13 +74,13 @@
     <footer>
         <div class="footer-menu">
             <ul class="footer-menu-list">
-                <li><img src="./imgFolder/keiba_jockey5_yellow.png"></li>
+                <li><img src="./data/keiba_jockey5_yellow.png"></li>
                 <li>Home</li>
                 <li>Others</li>
                 <li>Others</li>
                 <li>Others</li>
                 <li>Home</li>
-                <li><img src="./imgFolder/keiba_jockey1_white.png"></li>
+                <li><img src="./data/keiba_jockey1_white.png"></li>
             </ul>
         </div>
     </footer>
