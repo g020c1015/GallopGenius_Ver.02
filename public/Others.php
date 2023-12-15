@@ -38,7 +38,7 @@
     <!--ココから書き換えてください-->
     
     <div class="mainFrame">
-        <div class="text_other" class="fade-in-right">
+        <div class="text_other">
             -Gallop Genius-
         </div>
         <div class="text_other2">
@@ -65,7 +65,7 @@
                 Kikuchi_Yuto
             </div>
         </div>
-        <div class="OText" class="fade-in-right">
+        <div class="OText">
             -Outline-
         </div>
     </div>
