@@ -12,15 +12,14 @@
 		font-family:'Ubuntu Mono', monospace;
 		font-weight: bold;
 		color: #ffffff;
+		vertical-align:middle;
 		text-decoration: none;
 	}
 	.headerText{
 		display: flex;
 		align-items: center;
-		
 	}
 	.headerText a{
-		vertical-align:middle;
 		text-decoration: none;
 		color: #ffffff;
 	}
