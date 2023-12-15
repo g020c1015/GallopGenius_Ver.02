@@ -944,7 +944,7 @@
 	.text_kaisyuritu{
 	}
 }
-@media screen{
+@media screen and(min-width:961px){
 	header{
 		position: fixed; /*ヘッダー固定*/
 		top: 0;
