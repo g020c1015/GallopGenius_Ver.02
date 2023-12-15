@@ -6,7 +6,7 @@
 		top: 0;
 		left:0;
 		width: 100%;
-		height: 12vh;
+		height: 50px;
 		background-color: #023015;
 		font-size: 30px;
 		font-family:'Ubuntu Mono', monospace;
@@ -150,8 +150,8 @@
 
 	/*img設定*/
 	img{
-		width: 70px;
-		height: 70px;
+		width: 30px;
+		height: 30px;
 	}
 	body{
 		margin: 0;
@@ -170,7 +170,7 @@
 	/*図形を並べるcss*/
 	.boxArea{
 		font-family: 'Ubuntu Mono', monospace;
-		font-size: 70px;
+		font-size: 30px;
 		font-weight: bold;
 		display: flex;
 		justify-content: center;
@@ -181,7 +181,7 @@
 
 	/*ボタン用css*/
 	.box-AIPrediction{
-		width: 30%;
+		width: 75%;
 		height: 170px;
 		border: solid 10px #ffffff;
 		border-radius: 45px;
@@ -207,7 +207,7 @@
 	}
 	
 	.box-HumanPrediction{
-		width: 30%;
+		width: 75%;
 		height: 170px;
 		border: solid 10px #ffffff;
 		border-radius:45px;
@@ -232,7 +232,7 @@
 	}
 
 	.box-HorseList{
-		width: 30%;
+		width: 75%;
 		height: 170px;
 		border: solid 10px #ffffff;
 		border-radius:45px;
@@ -257,7 +257,7 @@
 	}
 
 	.box-RecoveryRate{
-		width: 30%;
+		width: 75%;
 		height: 170px;
 		border: solid 10px #ffffff;
 		border-radius:45px;
@@ -282,7 +282,7 @@
 	}
 
 	.box-RaceCalender{
-		width: 30%;
+		width: 75%;
 		height: 170px;
 		border: solid 10px #ffffff;
 		border-radius:45px;
@@ -307,7 +307,7 @@
 	}
 
 	.box-Others{
-		width: 30%;
+		width: 75%;
 		height: 170px;
 		border: solid 10px #ffffff;
 		border-radius:45px;
