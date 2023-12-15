@@ -129,7 +129,6 @@
         <div class="footer-menu">
             <ul class="footer-menu-list">
                 <li><img src="./data/keiba_jockey5_yellow.png"></li>
-                <li><img src="./imgFolder/keiba_jockey5_yellow.png"></li>
                 <li><a href="./index.php">Home</a></li>
                 <li><a href="./AIP.php">Gallop Genius</a></li>
                 <li><a href="./Others.php">Others</a></li>
