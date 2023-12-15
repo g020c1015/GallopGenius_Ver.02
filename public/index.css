@@ -131,6 +131,7 @@
 		color: #023015;
 		font-size: 15px;
 		font-weight: bold;
+		vertical-align:middle;
 		font-family:'Ubuntu Mono', monospace;
 	}
 	.footer-menu {
