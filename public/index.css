@@ -134,7 +134,7 @@
 		font-weight: bold;
 		font-family:'Ubuntu Mono', monospace;
 		width: 100%;
-		height: 180px;
+		height: 12vh;
 		z-index: 80;
 	}
 	.footer-menu {
