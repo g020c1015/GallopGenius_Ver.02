@@ -127,15 +127,14 @@
 	/*フッタ―*/
 	footer{
 		position: absolute;
+		width: 100%;
+		height: 12vh;
 		bottom: 0;
 		background-color: #DBE6E0;
 		color: #023015;
 		font-size: 15px;
 		font-weight: bold;
 		font-family:'Ubuntu Mono', monospace;
-		width: 100%;
-		height: 12vh;
-		z-index: 80;
 	}
 	.footer-menu {
 		height: 60;
