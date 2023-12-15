@@ -44,7 +44,7 @@
         <div class="text_other2">
             競馬初心者でも簡単に利用できる予想AI
         </div>
-        <div class="text_other" class="fade-in-right">
+        <div class="text_other">
             -Member-
         </div>
         <div class="text_other2">
