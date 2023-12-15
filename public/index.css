@@ -17,9 +17,10 @@
 	.headerText{
 		display: flex;
 		align-items: center;
-		vertical-align:middle;
+		
 	}
 	.headerText a{
+		vertical-align:middle;
 		text-decoration: none;
 		color: #ffffff;
 	}
