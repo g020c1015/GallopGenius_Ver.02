@@ -366,7 +366,7 @@
 		width:100%;
 		margin: 5% 5% 20%;
 		border-radius: 30px;
-		border: solid 10px #ffffff;
+		border: solid 10px #000000;
 		font-family: 'Ubuntu Mono', monospace;
 	}
 	.titleText{
