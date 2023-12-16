@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./index.css">
     <title>Gallop Genius</title>
 </head>
-<body  background="./data/keiba背景_パドック.jpg">
+<body background="./imgFolder/keiba背景_ゴール直前.jpg">
+
 <div class="wrapper">
     <!--header-->
     <header>
@@ -23,7 +24,7 @@
         <div class="menu-content">
             <ul>
                 <li><a href="./index.php">Home</a></li>
-                <li><a href="./AIP.php">AI Prediction</a></li>
+                <li><a href="./AIP.php">Gallop Genius</a></li>
                 <li><a href="./HumanP.php">Human Prediction</a></li>
                 <li><a href="./HorseList.php">Horse List</a></li>
                 <li><a href="./AIP.php">AI Recovery Rate</a></li>
@@ -34,9 +35,7 @@
         </div>
     </header>
     <main>
-
     <!--本文-->
-    <!--ココから書き換えてください-->
     <div class="mainFrame">
         <div class="titleText">-Race Calender-</div>
         <!--G1.G2.G3の直近の予定-->
@@ -137,10 +136,5 @@
         </div>
     </footer>
 </div>
-
-<!--script-->
-<script>
-
-</script>
 </body>
 </html>
