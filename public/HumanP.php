@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./index.css">
     <title>Gallop Genius</title>
 </head>
-<body background="./data/keiba背景_パドック.jpg">
+<body background="./imgFolder/keiba背景_ゴール直前.jpg">
+
 <div class="wrapper">
     <!--header-->
     <header>
@@ -24,7 +25,7 @@
             <ul>
                 <li><a href="./index.php">Home</a></li>
                 <li><a href="./AIP.php">Gallop Genius</a></li>
-                <li><a href="./HumanP.php">Nakanohito</a></li>
+                <li><a href="./HumanP.php">Human Prediction</a></li>
                 <li><a href="./HorseList.php">Horse List</a></li>
                 <li><a href="./AIP.php">AI Recovery Rate</a></li>
                 <li><a href="./RaceCalendar.php">Race Calendar</a></li>
@@ -35,12 +36,11 @@
     </header>
     <main>
     <!--本文-->
-    <!--ココから書き換えてください-->
     <div class="mainFrame">
         <div class="titleText">
             <div class="nakanohito">
                 <p>
-                    <img src="./data/keiba_uma_character7.png" class="img_nakanohito">
+                    <img src="./imgFolder/keiba_uma_character7.png" class="img_nakanohito">
                     kikuchi_Yutoの予想
                 </p>
 
