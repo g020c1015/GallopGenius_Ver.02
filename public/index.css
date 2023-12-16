@@ -363,8 +363,10 @@
 	/*mainFrame・titleText共通css*/
 	
 	.mainFrame{
-		width:100%;
+		width:90%;
 		margin-top:125px;
+		margin-left: 5%;
+		margin-right: 5%;
 		margin-bottom:20px;
 		border-radius: 30px;
 		border: solid 10px #000000;
