@@ -36,7 +36,11 @@
     </header>
     <main>
     <!--本文-->
-    
+    <div class="mainFrame">
+        <div class="titleText">
+            Gallop Genius
+        </div>
+    </div>
     </main>
     <!--footer-->
     <footer>
