@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./index.css">
     <title>Gallop Genius</title>
 </head>
-<body  background="./data/keiba背景_パドック.jpg">
+<body background="./imgFolder/keiba背景_ゴール直前.jpg">
+
 <div class="wrapper">
     <!--header-->
     <header>
@@ -23,7 +24,7 @@
         <div class="menu-content">
             <ul>
                 <li><a href="./index.php">Home</a></li>
-                <li><a href="./AIP.php">AI Prediction</a></li>
+                <li><a href="./AIP.php">Gallop Genius</a></li>
                 <li><a href="./HumanP.php">Human Prediction</a></li>
                 <li><a href="./HorseList.php">Horse List</a></li>
                 <li><a href="./AIP.php">AI Recovery Rate</a></li>
@@ -34,6 +35,7 @@
         </div>
     </header>
     <main>
+    <!--本文-->
     <!--出馬数を取得-->
     <?php
         try{
@@ -102,13 +104,10 @@
                         <?php print("　　　　　　")?>
                         <?php print($resister["騎手"])?>
                         <?php print($resister["斤量"])?>
-                        <div>__________________________________________</div>
+                        <div>______________________</div>
                     </div>
                 </div>
             <?php endwhile?>
-            <script>
-
-            </script>
         </div>
     </div>
     </main>
@@ -125,6 +124,5 @@
         </div>
     </footer>
 </div>
-
 </body>
 </html>
