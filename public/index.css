@@ -394,7 +394,7 @@
 		height: 200px;
 		border-radius: 30px;
 		font-weight: bold;
-		font-size: 44px;
+		font-size: 25px;
 		padding-top: 10px;
 		vertical-align: top;
 	}
@@ -407,7 +407,7 @@
 		border-radius: 30px;
 	}
 	.race-date-month{
-		font-size: 30px;
+		font-size: 25px;
 	}
 
 	/*Others用テキストcss*/
