@@ -175,7 +175,7 @@
 		font-weight: bold;
 		display: flex;
 		justify-content: center;
-		text-align: center;
+		margin: auto;
 		flex-wrap: wrap;
 		align-items: center;
 		padding: 15px;
@@ -364,8 +364,7 @@
 	
 	.mainFrame{
 		width:90%;
-		margin:10px auto;
-		margin-bottom:20px;
+		margin: auto;
 		border-radius: 30px;
 		border: solid 10px #000000;
 		font-family: 'Ubuntu Mono', monospace;
