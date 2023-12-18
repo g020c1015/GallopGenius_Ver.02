@@ -476,7 +476,7 @@
 
 
 
-@media screen and (max-width: 960px){
+@media screen and (min-width:481px) and (max-width: 960px){
 	header{
 		position: fixed; /*ヘッダー固定*/
 		top: 0;
@@ -952,7 +952,7 @@
 
 
 
-@media screen and (man-width: 1440px){
+@media screen and (min-width:961px) and (man-width: 1440px){
 	header{
 		position: fixed; /*ヘッダー固定*/
 		top: 0;
