@@ -171,7 +171,7 @@
 	/*図形を並べるcss*/
 	.boxArea{
 		font-family: 'Ubuntu Mono', monospace;
-		font-size: 60px;
+		font-size: 45px;
 		font-weight: bold;
 		display: flex;
 		justify-content: center;
@@ -365,7 +365,7 @@
 	
 	.mainFrame{
 		width:90%;
-		top:200px;
+		top:400px;
 		margin:0 auto;
 		margin-bottom:20px;
 		border-radius: 30px;
