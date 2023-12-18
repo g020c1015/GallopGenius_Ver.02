@@ -364,7 +364,7 @@
 	
 	.mainFrame{
 		width:90%;
-		margin: auto;
+		display: flex;
 		border-radius: 30px;
 		border: solid 10px #000000;
 		font-family: 'Ubuntu Mono', monospace;
