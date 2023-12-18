@@ -184,7 +184,7 @@
 	.box-AIPrediction{
 		width: 90%;
 		height: 170px;
-		border: solid 10px #ffffff;
+		border: solid 10px #000;
 		border-radius: 45px;
 		margin: 10px;
 		box-sizing: border-box;
@@ -210,7 +210,7 @@
 	.box-HumanPrediction{
 		width: 90%;
 		height: 170px;
-		border: solid 10px #ffffff;
+		border: solid 10px #000;
 		border-radius:45px;
 		margin: 10px;
 		box-sizing: border-box;
@@ -235,7 +235,7 @@
 	.box-HorseList{
 		width: 90%;
 		height: 170px;
-		border: solid 10px #ffffff;
+		border: solid 10px #000;
 		border-radius:45px;
 		margin: 10px;
 		box-sizing: border-box;
@@ -260,7 +260,7 @@
 	.box-RecoveryRate{
 		width: 90%;
 		height: 170px;
-		border: solid 10px #ffffff;
+		border: solid 10px #000;
 		border-radius:45px;
 		margin: 10px;
 		box-sizing: border-box;
@@ -285,7 +285,7 @@
 	.box-RaceCalender{
 		width: 90%;
 		height: 170px;
-		border: solid 10px #000000;
+		border: solid 10px #000;
 		border-radius:45px;
 		margin: 10px;
 		box-sizing: border-box;
@@ -310,7 +310,7 @@
 	.box-Others{
 		width: 90%;
 		height: 170px;
-		border: solid 10px #ffffff;
+		border: solid 10px #000;
 		border-radius:45px;
 		margin: 10px;
 		box-sizing: border-box;
