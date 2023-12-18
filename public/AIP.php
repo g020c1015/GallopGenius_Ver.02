@@ -38,7 +38,6 @@
     <!--本文-->
     <br/>
     <br/>
-    <br/>
     <div class="mainFrame">
         <div class="titleText">
             Gallop Genius
