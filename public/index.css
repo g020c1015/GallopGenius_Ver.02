@@ -365,7 +365,7 @@
 	.mainFrame{
 		width:90%;
 		margin-top:125px;
-		margin-left: auto;
+		margin:0 auto;
 		margin-bottom:20px;
 		border-radius: 30px;
 		border: solid 10px #000000;
