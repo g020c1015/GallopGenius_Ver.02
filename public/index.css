@@ -177,7 +177,6 @@
 		justify-content: center;
 		flex-wrap: wrap;
 		align-items: center;
-		text-align: center;
 		padding: 15px;
 	}
 
@@ -187,12 +186,11 @@
 		height: 170px;
 		border: solid 10px #000;
 		border-radius: 45px;
-		margin: 10px;
 		box-sizing: border-box;
-		text-align: center;
+		margin: 0 auto;
 	}
 	.box-AIPrediction a{
-		color: #ffffff;
+		color: #000;
 		text-decoration: none;
 		text-align: center;
 		display: block;
@@ -213,11 +211,11 @@
 		height: 170px;
 		border: solid 10px #000;
 		border-radius:45px;
-		margin: 10px;
+		margin: 0 auto;
 		box-sizing: border-box;
 	}
 	.box-HumanPrediction a{
-		color: #ffffff;
+		color: #000;
 		text-decoration: none;
 		text-align: center;
 		display: block;
@@ -238,11 +236,11 @@
 		height: 170px;
 		border: solid 10px #000;
 		border-radius:45px;
-		margin: 10px;
+		margin: 0 auto;
 		box-sizing: border-box;
 	}
 	.box-HorseList a{
-		color: #ffffff;
+		color: #000;
 		text-decoration: none;
 		text-align: center;
 		display: block;
@@ -263,11 +261,11 @@
 		height: 170px;
 		border: solid 10px #000;
 		border-radius:45px;
-		margin: 10px;
+		margin: 0 auto;
 		box-sizing: border-box;
 	}
 	.box-RecoveryRate a{
-		color: #ffffff;
+		color: #000;
 		text-decoration: none;
 		text-align: center;
 		display: block;
@@ -288,7 +286,7 @@
 		height: 170px;
 		border: solid 10px #000;
 		border-radius:45px;
-		margin: 10px;
+		margin: 0 auto;
 		box-sizing: border-box;
 	}
 	.box-RaceCalender a{
@@ -313,12 +311,12 @@
 		height: 170px;
 		border: solid 10px #000;
 		border-radius:45px;
-		margin: 10px;
+		margin: 0 auto;
 		box-sizing: border-box;
 		
 	}
 	.box-Others a{
-		color: #ffffff;
+		color: #000;
 		text-decoration: none;
 		text-align: center;
 		display: block;
