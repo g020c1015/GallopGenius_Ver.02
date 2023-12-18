@@ -171,12 +171,13 @@
 	/*図形を並べるcss*/
 	.boxArea{
 		font-family: 'Ubuntu Mono', monospace;
-		font-size: 30px;
+		font-size: 60px;
 		font-weight: bold;
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
 		align-items: center;
+		text-align: center;
 		padding: 15px;
 	}
 
