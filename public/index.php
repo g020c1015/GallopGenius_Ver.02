@@ -36,8 +36,8 @@
     </header>
     <main>
     <!--本文-->
-        <p></p>
-        <p></p>
+        <p class="space"></p>
+        <p class="space"></p>
     <!--ボタン６つ配置-->
         <div class="boxArea">
             <div class="box-AIPrediction">
