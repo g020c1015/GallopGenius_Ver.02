@@ -601,7 +601,7 @@
 	/*フッタ―*/
 	footer{
 		width: 100%;
-		height: 12vh;
+		height: 60px;
 		bottom: 0;
 		background-color: #DBE6E0;
 		color: #023015;
@@ -633,7 +633,6 @@
 		margin: 0;
 		background-size: cover;
 		background-repeat: no-repeat;
-		
 	}
 	
 	/*本文css*/
