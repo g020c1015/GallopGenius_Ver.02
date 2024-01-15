@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <!--レスポンシブ対応-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"/>
-    <link rel="stylesheet" href="https://g020c1015.github.io/GallopGenius_Ver.02/index.css">
+    <link rel="stylesheet" href="https://g020c1015.github.io/GallopGenius_Ver.02/public/index.css">
     <title>Gallop Genius</title>
 </head>
 <body background="./data/keiba背景_ゴール直前.jpg">
