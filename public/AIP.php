@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./index.css">
     <title>Gallop Genius</title>
 </head>
-<body background="./imgFolder/keiba背景_ゴール直前.jpg">
+<body background="./data/keiba背景_ゴール直前.jpg">
 
 <div class="wrapper">
     <!--header-->
