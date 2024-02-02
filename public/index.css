@@ -1424,6 +1424,14 @@
 	/*回収率*/
 	.text_kaisyuritu{
 	}
+
+	/*AI予想ページ*/
+	.AI_yosou_num{
+		font-family: 'Ubuntu Mono', monospace;
+		color: #fff;
+		font-size:60px;
+		text-align: center;
+	}
 }
 
 
