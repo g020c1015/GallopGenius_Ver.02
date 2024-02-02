@@ -40,8 +40,27 @@
     <br/>
     <div class="mainFrame">
         <div class="titleText">
-            Gallop Genius
+            Gallop Genius予想
         </div>
+        <?php
+            try{
+                $db =new PDO('mysql:dbname=race;host=localhost;charset=utf8','root','root');
+            }catch(PDOExeption e){
+                echo $e->getMessage();
+            }
+            $entry =$db->query('SELECT 馬番,ROUND(score,3)*1000 as score 
+                                FROM 20231029_tokyo
+                                WHERE レースid LIKE "%12"
+                                AND score >= 0;');
+        ?>
+        <?php while($resister = $entry->fetch():) ?>
+        <!--馬番　スコアを表示-->
+        <div class="AI_yosou_num">
+            <?php print($resister["馬番"])?><?php print("番")?>
+            <?php print(" ")?>
+            <?php print($resister["score"])?><?php print("pt")?>
+        </div>
+        <?php endwhile; ?>
     </div>
     </main>
     <!--footer-->
