@@ -44,7 +44,15 @@
             -Gallop Genius-
         </div>
         <div class="text_other2">
-            競馬初心者でも簡単に利用できる予想AI
+            <p>Gallop Geniusは初心者でも簡単に利用できる競馬予想AIです。</p>
+            <p>ボックス/１頭軸などの複数点の買い方をおススメしております。</p>
+        </div>
+        <div class="text_other">
+            -Manual-
+        </div>
+        <div class="text_other2>
+            <p>・Gallop Geniusでは予想結果として出てくる期待値をポイント(pt)として表示しております。</p>
+            <p>・ポイント(pt)が一定値以上の馬番(番)をサイトに掲載しており、表示された馬番(番)を複数組み合わせて馬券を購入することで安定した的中率と高額配当を狙うことが可能となっております。</p>
         </div>
         <div class="text_other">
             -Member-
