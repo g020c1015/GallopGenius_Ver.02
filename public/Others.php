@@ -65,14 +65,14 @@
         
         <div class="text_other3">
             機械学習
-            <p>・Python/LightGBM : 大量のデータの処理を高速かつ低負荷で行うことが可能</p>
+            <p>・Python/LightGBM<br>大量のデータの処理を高速かつ低負荷で行うことが可能</p>
             webサイト
-            <p>・HTML : webサイトのコードに使用</p>
-            <p>・CSS : webサイトのデザインに使用</p>
-            <p>・PHP : webサイトとデータベース間の通信に使用</p>
-            <p>・AWS : webサイト公開/webサイトの管理に使用</p>
-            <p>・MySQL : スクレイピング後のデータ管理に使用</p>
-            <p>・github : コードの管理/編集で使用</p>
+            <p>・HTML<br>webサイトのコードに使用</p>
+            <p>・CSS<br>webサイトのデザインに使用</p>
+            <p>・PHP<br>webサイトとデータベース間の通信に使用</p>
+            <p>・AWS<br>webサイト公開/webサイトの管理に使用</p>
+            <p>・MySQL<br>スクレイピング後のデータ管理に使用</p>
+            <p>・github<br>コードの管理/編集で使用</p>
         </div>
         <div class="text_other">
             -Member-
