@@ -47,12 +47,18 @@
                 <div class="g1-race-glade">G1</div>
                 <?PhP 
                 //データベースに接続
-                try{
-                    $db = new PDO('mysql:dbname=race;host=localhost;charset=utf8','root','root');
-                }catch(PDOException $e){
-                    echo $e->getMessage();
-                }
-                $entry = $db->query('SELECT min(DATE_FORMAT(日付, "%D %W")) as 日付, レース名, 格 FROM race.racecalendar WHERE 格="G1" AND month(日付) = month(current_date()) AND date(日付) >= date(current_date());');
+                    require_once __DIR__ . "/../config/database_config.php";
+
+                    define('DB_SCHEME', 'race');
+
+                    try{
+                        $db = new PDO('mysql:host=' . DB_HOST . ';dbname=' . DB_SCHEME, DB_USER, DB_PASS);
+                    }catch(PDOException $e){
+                        $msg = "MySQL への接続に失敗しました。<br>(" . $e->getMessage() . ")";
+                        echo $msg;
+                        exit;
+                    }
+                    $entry = $db->query('SELECT min(DATE_FORMAT(日付, "%D %W")) as 日付, レース名, 格 FROM race.racecalendar WHERE 格="G1" AND month(日付) = month(current_date()) AND date(日付) >= date(current_date());');
                 ?>
                 <?php while($resister = $entry->fetch()): ?>
                     <div class="race-name">
