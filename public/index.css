@@ -489,7 +489,11 @@
 	}
 
 	/*回収率*/
-	.text_kaisyuritu{
+	.kaisyuText{
+		color: #fff;
+		text-align: center;
+		margin-top: 1%;
+		font-size: 40px;
 	}
 }
 
@@ -1450,7 +1454,11 @@
 	}
 
 	/*回収率*/
-	.text_kaisyuritu{
+	.kaisyuText{
+		color: #fff;
+		text-align: center;
+		margin-top: 1%;
+		font-size: 60px;
 	}
 
 	/*AI予想ページ*/
