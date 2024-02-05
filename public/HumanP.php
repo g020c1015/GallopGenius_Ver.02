@@ -54,7 +54,7 @@
                         define('DB_SCHEME', 'db_myapp');
 
                         try{
-                            $db = new PDO('mysql:dbname=nakanohito;host=' . DB_HOST . ';charset=utf8',';dbname=' . DB_SCHEME, DB_USER, DB_PASS);
+                            $db = new PDO('mysql:host=' . DB_HOST . ';dbname=' . DB_SCHEME, DB_USER, DB_PASS);
                         }catch(PDOException $e){
                             $msg = "MySQL への接続に失敗しました。<br>(" . $e->getMessage() . ")";
                             echo $msg;
