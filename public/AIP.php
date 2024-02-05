@@ -43,13 +43,19 @@
             Gallop Genius予想
         </div>
         <?php
-            try{
-                $db =new PDO('mysql:dbname=race;host=localhost;charset=utf8','root','root');
-            }catch(PDOExeption e){
-                echo $e->getMessage();
-            }
+        require_once __DIR__ . "/../config/database_config.php";
+
+        define('DB_SCHEME', '出馬表');
+
+        try{
+            $db = new PDO('mysql:host=' . DB_HOST . ';dbname=' . DB_SCHEME, DB_USER, DB_PASS);
+        }catch(PDOException $e){
+            $msg = "MySQL への接続に失敗しました。<br>(" . $e->getMessage() . ")";
+            echo $msg;
+            exit;
+        }
             $entry =$db->query('SELECT 馬番,ROUND(score,3)*1000 as score 
-                                FROM 20231029_tokyo
+                                FROM 20240128_silkroads
                                 WHERE レースid LIKE "%12"
                                 AND score >= 0;');
         ?>
