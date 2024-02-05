@@ -130,7 +130,7 @@
 		position: absolute;
 		background-color: #DBE6E0;
 		color: #023015;
-		font-size: 10px;
+		font-size: 25px;
 		font-weight: bold;
 		vertical-align:middle;
 		text-decoration: none;
@@ -152,8 +152,8 @@
 
 	/*img設定*/
 	.footer_img{
-		width: 30px;
-		height: 30px;
+		width: 40px;
+		height: 40px;
 	}
 	body{
 		margin: 0;
