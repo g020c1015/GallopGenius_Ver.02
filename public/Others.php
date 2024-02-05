@@ -84,10 +84,9 @@
             -Detail-
         </div>
         <div class="text_other2>
-            <p>GallopGeniusの構成</p>
-            <p>・機械学習 (Python/LightGBM)</p>
-            <p>・webサイト (PHP/CSS/AWS/MySQL)</p>
-            
+            <div>GallopGeniusの構成</div>
+            <div>・機械学習 (Python/LightGBM)</div>
+            <div>・webサイト (PHP/CSS/AWS/MySQL)</div>
         </div>
     </div>
     </main>
