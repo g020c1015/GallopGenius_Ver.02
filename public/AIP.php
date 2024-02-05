@@ -55,7 +55,7 @@
             exit;
         }
             $entry =$db->query('SELECT 馬番,ROUND(score,3)*1000 as score 
-                                FROM 20240128_silkroads
+                                FROM 20240128_silkroadS
                                 WHERE レースid LIKE "%12"
                                 AND score >= 0;');
         ?>
