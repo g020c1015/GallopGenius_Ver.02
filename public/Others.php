@@ -63,7 +63,7 @@
             -Detail-
         </div>
         <div class="text_other">
-            <p>GallopGeniusの構成</p>
+            <p>Gallop Geniusの構成</p>
             <p>機械学習</p>
             <p>・Python/LightGBM : 大量のデータの処理を高速かつ低負荷で行うことが可能</p>
             <p>webサイト</p>
