@@ -114,14 +114,6 @@
 		left: 70%;/*メニューを画面内へ*/
 	}
 
-	.wrapper{
-		height: 100%;
-		min-height: 100vh;
-		position: relative;
-		box-sizing: border-box;
-	}
-
-
 	/*フッタ―*/
 	footer{
 		width: 100%;
@@ -168,7 +160,14 @@
 		margin-top: 20%;
 		margin-bottom: 20%;
 	}
-
+	
+	.wrapper{
+		height: 100%;
+		min-height: 100vh;
+		position: relative;
+		box-sizing: border-box;
+		justify-content: center;
+	}
 
 	/*図形を並べるcss*/
 	.boxArea{
@@ -176,7 +175,6 @@
 		font-size: 45px;
 		font-weight: bold;
 		display: flex;
-		justify-content: center;
 		margin: auto;
 		flex-wrap: wrap;
 		align-items: center;
