@@ -50,7 +50,7 @@
         <div class="text_other">
             -Manual-
         </div>
-        <div class="text_other2">
+        <div class="text_other3">
             <div>
                 ・Gallop Genius(AI予想)では予想結果として出てくる期待値をポイント(pt)で表示しております。
             </div>
