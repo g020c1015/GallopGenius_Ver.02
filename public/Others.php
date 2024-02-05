@@ -80,8 +80,14 @@
                 Kikuchi_Yuto
             </div>
         </div>
-        <div class="OText">
-            -Outline-
+        <div class="text_other">
+            -Detail-
+        </div>
+        <div class="text_other2>
+            <p>GallopGeniusの構成</p>
+            <p>・機械学習 (Python/LightGBM)</p>
+            <p>・webサイト (PHP/CSS/AWS/MySQL)</p>
+            
         </div>
     </div>
     </main>
