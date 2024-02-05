@@ -108,7 +108,7 @@
                         <?php print("　　　　　　")?>
                         <?php print($resister["騎手"])?>
                         <?php print($resister["斤量"])?>
-                        <div>______________________</div>
+                        <hr class="horseList_hr">
                     </div>
                 </div>
             <?php endwhile?>
