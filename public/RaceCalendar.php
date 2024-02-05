@@ -73,12 +73,7 @@
             <div class="currentRace" id="g2">
                 <div class="g2-race-glade">G2</div>
                 <?PhP 
-                //データベースに接続
-                try{
-                    $db = new PDO('mysql:dbname=race;host=localhost;charset=utf8','root','root');
-                }catch(PDOException $e){
-                    echo $e->getMessage();
-                }
+                
                 $entry = $db->query('SELECT min(DATE_FORMAT(日付, "%D %W")) as 日付, レース名, 格 FROM race.racecalendar WHERE 格="G2" AND month(日付) = month(current_date()) AND date(日付) >= date(current_date());');
                 ?>
                 <?php while($resister = $entry->fetch()): ?>
@@ -94,12 +89,7 @@
             <div class="currentRace" id="g3">
                 <div class="g1-race-glade">G3</div>
                 <?PhP 
-                //データベースに接続
-                try{
-                    $db = new PDO('mysql:dbname=race;host=localhost;charset=utf8','root','root');
-                }catch(PDOException $e){
-                    echo $e->getMessage();
-                }
+                
                 $entry = $db->query('SELECT min(DATE_FORMAT(日付, "%D %W")) as 日付, レース名, 格 FROM race.racecalendar WHERE 格="G3" AND month(日付) = month(current_date()) AND date(日付) >= date(current_date());');
                 ?>
                 <?php while($resister = $entry->fetch()): ?>
@@ -114,12 +104,7 @@
             <!--今月のレース一覧-->
             <div class="race-month">
             <?PhP 
-                //データベースに接続
-                try{
-                    $db = new PDO('mysql:dbname=race;host=localhost;charset=utf8','root','root');
-                }catch(PDOException $e){
-                    echo $e->getMessage();
-                }
+                
                 $entry = $db->query('SELECT DATE_FORMAT(日付, "%D %a") as 日付, レース名, 格 FROM race.racecalendar WHERE month(日付) = month(current_date());');
             ?>
             <?php while($resister = $entry->fetch()): ?>
