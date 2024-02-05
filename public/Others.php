@@ -62,7 +62,7 @@
         <div class="text_other">
             -Detail-
         </div>
-        <div class="text_other2>
+        <div class="text_other2">
             <p>GallopGeniusの構成</p>
             <p>・機械学習 (Python/LightGBM)</p>
             <p>・webサイト (PHP/CSS/AWS/MySQL)</p>
