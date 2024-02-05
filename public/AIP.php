@@ -59,7 +59,7 @@
                                 WHERE レースid LIKE "%12"
                                 AND score >= 0;');
         ?>
-        <?php while($resister = $entry->fetch():) ?>
+        <?php while($resister = $entry->fetch()): ?>
         <!--馬番　スコアを表示-->
         <div class="AI_yosou_num">
             <?php print($resister["馬番"])?><?php print("番")?>
