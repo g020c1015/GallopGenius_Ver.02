@@ -49,8 +49,12 @@
                 <!--予想内容を掲載-->
                 <div class="select_1">
                     <?php
+                        require_once __DIR__ . "/../config/database_config.php";
+
+                        define('DB_SCHEME', 'db_myapp');
+
                         try{
-                            $db = new PDO('mysql:dbname=nakanohito;host=localhost;charset=utf8','root','root');
+                            $db = new PDO('mysql:dbname=nakanohito;host=' . DB_HOST . ';charset=utf8',';dbname=' . DB_SCHEME, DB_USER, DB_PASS);
                         }catch(PDOException $e){
                             echo $e->getMessage();
                         }
@@ -68,7 +72,7 @@
                 <div class="select_2">
                 <?php
                     try{
-                        $db = new PDO('mysql:dbname=nakanohito;host=localhost;charset=utf8','root','root');
+                        $db = new PDO('mysql:dbname=nakanohito;host=' . DB_HOST . ';dbname=' . DB_SCHEME, DB_USER, DB_PASS);
                     }catch(PDOException $e){
                         echo $e->getMessage();
                     }
@@ -84,7 +88,7 @@
                 <div class="select_2">
                 <?php
                     try{
-                        $db = new PDO('mysql:dbname=nakanohito;host=localhost;charset=utf8','root','root');
+                        $db = new PDO('mysql:dbname=nakanohito;host=' . DB_HOST . ';dbname=' . DB_SCHEME, DB_USER, DB_PASS);
                     }catch(PDOException $e){
                         echo $e->getMessage();
                     }
@@ -102,7 +106,7 @@
                 <div class="reason">
                 <?php
                     try{
-                        $db = new PDO('mysql:dbname=nakanohito;host=localhost;charset=utf8','root','root');
+                        $db = new PDO('mysql:dbname=nakanohito;host=' . DB_HOST . ';dbname=' . DB_SCHEME, DB_USER, DB_PASS);
                     }catch(PDOException $e){
                         echo $e->getMessage();
                     }
