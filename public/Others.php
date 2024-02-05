@@ -63,8 +63,9 @@
             -Detail-
         </div>
         <div class="text_other">
-            <p>Gallop Geniusの構成</p>
-            <p>機械学習</p>
+            <p>構成</p>
+        </div>
+        <div class="text_other3">
             <p>・Python/LightGBM : 大量のデータの処理を高速かつ低負荷で行うことが可能</p>
             <p>webサイト</p>
             <p>・HTML : webサイトのコードに使用</p>
