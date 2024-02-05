@@ -130,9 +130,10 @@
 		position: absolute;
 		background-color: #DBE6E0;
 		color: #023015;
-		font-size: 15px;
+		font-size: 10px;
 		font-weight: bold;
 		vertical-align:middle;
+		text-decoration: none;
 		font-family:'Ubuntu Mono', monospace;
 	}
 	.footer-menu {
@@ -151,8 +152,8 @@
 
 	/*img設定*/
 	index_img{
-		width: 30px;
-		height: 30px;
+		width: 10px;
+		height: 10px;
 	}
 	body{
 		margin: 0;
