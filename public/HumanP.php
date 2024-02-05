@@ -56,7 +56,9 @@
                         try{
                             $db = new PDO('mysql:dbname=nakanohito;host=' . DB_HOST . ';charset=utf8',';dbname=' . DB_SCHEME, DB_USER, DB_PASS);
                         }catch(PDOException $e){
-                            echo $e->getMessage();
+                            $msg = "MySQL への接続に失敗しました。<br>(" . $e->getMessage() . ")";
+                            echo $msg;
+                            exit;
                         }
                         $entry = $db->query("SELECT number_1, name_1 FROM nakanohito.nakanohito_table;")
                     ?>
