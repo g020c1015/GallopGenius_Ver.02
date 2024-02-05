@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <!--レスポンシブ対応-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+    <meta name="viewport" content="width=device-width"/>
     <link rel="stylesheet" href="./index.css">
     <title>Gallop Genius</title>
 </head>
