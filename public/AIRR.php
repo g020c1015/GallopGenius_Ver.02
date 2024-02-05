@@ -38,7 +38,12 @@
     <br/>
     <br/>
     <!--本文-->
-    
+        <div class="">-Kaisyuritu-</div>
+        <div class="">
+            単勝:70% ~ 110%<br>
+            複勝:50% ~ 105%<br>
+            三連複 :40% ~ 70%
+        </div>
     </main>
     <!--footer-->
     <footer>
