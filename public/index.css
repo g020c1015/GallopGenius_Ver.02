@@ -494,6 +494,7 @@
 		text-align: center;
 		margin-top: 1%;
 		font-size: 40px;
+		font-family:'Ubuntu Mono', monospace;
 	}
 }
 
@@ -1459,6 +1460,7 @@
 		text-align: center;
 		margin-top: 1%;
 		font-size: 60px;
+		font-family:'Ubuntu Mono', monospace;
 	}
 
 	/*AI予想ページ*/
