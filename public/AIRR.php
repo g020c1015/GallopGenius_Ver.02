@@ -38,8 +38,8 @@
     <br/>
     <br/>
     <!--本文-->
-        <div class="">-Kaisyuritu-</div>
-        <div class="">
+        <div class="titleText">-Kaisyuritu-</div>
+        <div class="kaisyuText">
             単勝:70% ~ 110%<br>
             複勝:50% ~ 105%<br>
             三連複 :40% ~ 70%
