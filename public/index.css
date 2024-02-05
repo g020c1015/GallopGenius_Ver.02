@@ -166,8 +166,7 @@
 		min-height: 100vh;
 		position: relative;
 		box-sizing: border-box;
-		justify-content: center;
-		align-items: center;
+		
 	}
 
 	/*図形を並べるcss*/
@@ -178,7 +177,8 @@
 		display: flex;
 		margin: auto;
 		flex-wrap: wrap;
-		text-align: center;
+		justify-content: center;
+		align-items: center;
 		padding: 15px;
 	}
 
