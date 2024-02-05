@@ -496,6 +496,13 @@
 		font-size: 40px;
 		font-family:'Ubuntu Mono', monospace;
 	}
+	/*GGの予想ページ*/
+	.AI_yosou_num{
+		font-family: 'Ubuntu Mono', monospace;
+		color: #fff;
+		font-size:30px;
+		text-align: center;
+	}
 }
 
 
