@@ -1439,6 +1439,10 @@
 	.horse_data .jockey_name{
 		font-size: 30px;
 	}
+	.horseList_hr{
+		margin-left: 25%;
+		margin-right: 25%;
+	}
 
 	/*回収率*/
 	.text_kaisyuritu{
