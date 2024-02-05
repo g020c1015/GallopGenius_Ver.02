@@ -465,18 +465,21 @@
 	/*出馬表*/
 	.horse_data{
 		font-family: 'Ubuntu Mono', monospace;
-		font-size: 30px;
+		font-size: 25px;
 		font-weight: bold;
 		color: #fff;
 		text-align: left;
-		margin-left: auto;
+		margin-left: 10%;
+		margin-right: 10%;
 	}
 	.horse_data .jockey_name{
-		font-size: 30px;
+		font-size: 20px;
 	}
 	.horseList_hr{
 		border: none;
 		border-bottom: 1px solid #fff;
+		margin-left: 10%;
+		margin-right: 10%;
 	}
 
 	/*回収率*/
