@@ -66,7 +66,7 @@
             <p>GallopGeniusの構成</p>
             <p>機械学習</p>
             <p>・Python/LightGBM : 大量のデータの処理を高速かつ低負荷で行うことが可能</p>
-            <p>webサイト (PHP/CSS/AWS/MySQL)</p>
+            <p>webサイト</p>
             <p>・HTML : webサイトのコードに使用</p>
             <p>・CSS : webサイトのデザインに使用</p>
             <p>・PHP : webサイトとデータベース間の通信に使用</p>
