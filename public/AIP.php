@@ -45,7 +45,7 @@
         <?php
         require_once __DIR__ . "/../config/database_config.php";
 
-        define('DB_SCHEME', '出馬表');
+        define('DB_SCHEME', 'race');
 
         try{
             $db = new PDO('mysql:host=' . DB_HOST . ';dbname=' . DB_SCHEME, DB_USER, DB_PASS);
