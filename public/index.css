@@ -189,9 +189,9 @@
 		border-radius: 45px;
 		box-sizing: border-box;
 		margin-top: 20px;
-		align-items: center;
 	}
 	.box-AIPrediction a{
+		align-items: center;
 		color: #fff;
 		text-decoration: none;
 		text-align: center;
