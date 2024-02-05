@@ -56,8 +56,7 @@
         }
             $entry =$db->query('SELECT 馬番,ROUND(score,3)*1000 as score 
                                 FROM 20240128_silkroadS
-                                WHERE レースid LIKE "%12"
-                                AND score >= 0;');
+                                WHERE score >= 0;');
         ?>
         <?php while($resister = $entry->fetch()): ?>
         <!--馬番　スコアを表示-->
