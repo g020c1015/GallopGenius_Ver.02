@@ -469,10 +469,14 @@
 		font-weight: bold;
 		color: #fff;
 		text-align: left;
-		margin-left: 25%;
+		margin-left: auto;
 	}
 	.horse_data .jockey_name{
 		font-size: 30px;
+	}
+	.horseList_hr{
+		border: none;
+		border-bottom: 1px solid #fff;
 	}
 
 	/*回収率*/
