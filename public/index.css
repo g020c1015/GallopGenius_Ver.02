@@ -293,7 +293,7 @@
 		box-sizing: border-box;
 	}
 	.box-RaceCalender a{
-		color: #fff000;
+		color: #fff;
 		text-decoration: none;
 		text-align: center;
 		display: block;
@@ -369,7 +369,7 @@
 		top: 300px;
 		margin:auto;
 		border-radius: 30px;
-		border: solid 10px #fff000;
+		border: solid 10px #fff;
 		font-family: 'Ubuntu Mono', monospace;
 	}
 	.titleText{
@@ -389,7 +389,7 @@
 	}
 	.currentRace{
 		font-family: 'Ubuntu Mono', monospace;
-		color:#fff000;
+		color:#fff;
 		display: inline-block;
 		width: 32%;
 		height: 200px;
@@ -401,7 +401,7 @@
 	}
 	.race-month{
 		font-family: 'Ubuntu Mono', monospace;
-		color:#fff000;
+		color:#fff;
 		width: 98%;
 		font-weight: bold;
 		margin: 1% 1% 20px;
