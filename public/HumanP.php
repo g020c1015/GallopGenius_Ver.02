@@ -73,11 +73,7 @@
                 </div>
                 <div class="select_2">
                 <?php
-                    try{
-                        $db = new PDO('mysql:dbname=nakanohito;host=' . DB_HOST . ';dbname=' . DB_SCHEME, DB_USER, DB_PASS);
-                    }catch(PDOException $e){
-                        echo $e->getMessage();
-                    }
+                    
                     $entry = $db->query("SELECT number_2, name_2 FROM nakanohito.nakanohito_table;")
                 ?>
                     <?php while($resister = $entry->fetch()):?>
@@ -89,11 +85,7 @@
                 </div>
                 <div class="select_2">
                 <?php
-                    try{
-                        $db = new PDO('mysql:dbname=nakanohito;host=' . DB_HOST . ';dbname=' . DB_SCHEME, DB_USER, DB_PASS);
-                    }catch(PDOException $e){
-                        echo $e->getMessage();
-                    }
+                    
                     $entry = $db->query("SELECT number_3, name_3 FROM nakanohito.nakanohito_table;")
                 ?>
                     <?php while($resister = $entry->fetch()):?>
@@ -107,11 +99,7 @@
                 </div>
                 <div class="reason">
                 <?php
-                    try{
-                        $db = new PDO('mysql:dbname=nakanohito;host=' . DB_HOST . ';dbname=' . DB_SCHEME, DB_USER, DB_PASS);
-                    }catch(PDOException $e){
-                        echo $e->getMessage();
-                    }
+                    
                     $entry = $db->query("SELECT reason FROM nakanohito.nakanohito_table;")
                 ?>
                     <?php while($resister = $entry->fetch()):?>
