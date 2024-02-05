@@ -62,12 +62,11 @@
         <div class="text_other">
             -Detail-
         </div>
-        <div class="text_other">
-            <p>構成</p>
-        </div>
+        
         <div class="text_other3">
+            機械学習
             <p>・Python/LightGBM : 大量のデータの処理を高速かつ低負荷で行うことが可能</p>
-            <p>webサイト</p>
+            webサイト
             <p>・HTML : webサイトのコードに使用</p>
             <p>・CSS : webサイトのデザインに使用</p>
             <p>・PHP : webサイトとデータベース間の通信に使用</p>
