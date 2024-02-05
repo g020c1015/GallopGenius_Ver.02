@@ -72,7 +72,7 @@
             <p>・PHP : webサイトとデータベース間の通信に使用</p>
             <p>・AWS : webサイト公開/webサイトの管理に使用</p>
             <p>・MySQL : スクレイピング後のデータ管理に使用</p>
-            <p>・github : コードの管理/編集で仕様</p>
+            <p>・github : コードの管理/編集で使用</p>
         </div>
         <div class="text_other">
             -Member-
