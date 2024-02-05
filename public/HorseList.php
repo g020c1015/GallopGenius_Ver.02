@@ -101,7 +101,7 @@
                     <?php if($resister["枠"]=="8"){
                         echo'<font color="#fff" style="background-color:#f3a0aa">&nbsp;8&nbsp;</font>';
                     }?>
-                    <?php print($resister["馬番"])?>
+                    <?php print($resister["馬番"])?><br>
                     <?php print($resister["馬名"])?>
                     <div class="jockey_name">
                         <?php print($resister["性齢"])?>
