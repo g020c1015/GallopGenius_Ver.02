@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
 /*スマホサイズ*/
-@media screen and (max-width: 560px){
+@media only screen and (max-width: 560px){
 	header{
 		position: fixed; /*ヘッダー固定*/
 		top: 0;
@@ -477,7 +477,7 @@
 
 
 
-@media screen and (max-width: 960px){
+@media opnly screen and (min-width: 560px) and (max-width: 960px){
 	header{
 		position: fixed; /*ヘッダー固定*/
 		top: 0;
@@ -952,7 +952,7 @@
 
 
 /*pc向けのcss*/
-@media screen and (max-width: 1500px){
+@media only screen and (min-width: 960px) and (max-width: 1500px){
 	header{
 		position: fixed; /*ヘッダー固定*/
 		top: 0;
