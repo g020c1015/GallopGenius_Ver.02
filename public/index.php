@@ -42,8 +42,7 @@
         <div class="boxArea">
             <div class="box-AIPrediction">
                 <a href="./AIP.php">
-                    Gallop Genius<br/>
-                    
+                    Gallop Genius
                 </a>
             </div>
             <div class="box-HumanPrediction">
