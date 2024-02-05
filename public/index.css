@@ -478,7 +478,7 @@
 
 
 
-@media only screen and (min-width: 560px) and (max-width: 960px) {
+@media only screen and (min-width: 561px) and (max-width: 960px) {
 	header{
 		position: fixed; /*ヘッダー固定*/
 		top: 0;
@@ -953,7 +953,7 @@
 
 
 /*pc向けのcss*/
-@media only screen and (max-width: 1500px) {
+@media only screen and (mix-width: 961px) {
 	header{
 		position: fixed; /*ヘッダー固定*/
 		top: 0;
