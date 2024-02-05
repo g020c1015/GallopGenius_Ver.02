@@ -40,8 +40,8 @@
     <!--ココから書き換えてください-->
     
     <div class="mainFrame">
-        <div class="text_other">
-            -Gallop Genius-
+        <div class="text_other2">
+            ~WELLCOME TO GALLOP GENIUS~
         </div>
         <div class="text_other2">
             <p>Gallop Geniusは初心者でも簡単に利用できる競馬予想AIです。</p>
@@ -62,10 +62,17 @@
         <div class="text_other">
             -Detail-
         </div>
-        <div class="text_other2">
+        <div class="text_other">
             <p>GallopGeniusの構成</p>
-            <p>・機械学習 (Python/LightGBM)</p>
-            <p>・webサイト (PHP/CSS/AWS/MySQL)</p>
+            <p>機械学習</p>
+            <p>・Python/LightGBM : 大量のデータの処理を高速かつ低負荷で行うことが可能</p>
+            <p>webサイト (PHP/CSS/AWS/MySQL)</p>
+            <p>・HTML : webサイトのコードに使用</p>
+            <p>・CSS : webサイトのデザインに使用</p>
+            <p>・PHP : webサイトとデータベース間の通信に使用</p>
+            <p>・AWS : webサイト公開/webサイトの管理に使用</p>
+            <p>・MySQL : スクレイピング後のデータ管理に使用</p>
+            <p>・github : コードの管理/編集で仕様</p>
         </div>
         <div class="text_other">
             -Member-
