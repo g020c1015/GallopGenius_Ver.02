@@ -50,9 +50,14 @@
         <div class="text_other">
             -Manual-
         </div>
-        <div class="text_other2>
-            <p>・Gallop Geniusでは予想結果として出てくる期待値をポイント(pt)として表示しております。</p>
-            <p>・ポイント(pt)が一定値以上の馬番(番)をサイトに掲載しており、表示された馬番(番)を複数組み合わせて馬券を購入することで安定した的中率と高額配当を狙うことが可能となっております。</p>
+        <div class="text_other2">
+            <div>
+                ・Gallop Genius(AI予想)では予想結果として出てくる期待値をポイント(pt)で表示しております。
+            </div>
+            <p></p>
+            <div>
+                ・ポイント(pt)が高い馬番(番)を複数併せて馬券を購入することで安定した的中率を高額配当を狙うことが可能となっております。
+            </div>
         </div>
         <div class="text_other">
             -Member-
