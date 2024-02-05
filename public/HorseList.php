@@ -72,11 +72,7 @@
                 horse_count.innerHTML = '<?php echo $count['count(*)'] ?>';
             </script>
                 <?php
-                    try{
-                        $db = new PDO('mysql:dbname=race;host=localhost;charset=utf8','root','root');
-                    }catch(PDOException $e){
-                        echo $e->getMessage();
-                    }
+                    
                     $entry = $db->query('SELECT * FROM race.出馬表;');
                 ?>
                 <?php while($resister = $entry->fetch()):?>
