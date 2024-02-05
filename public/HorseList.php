@@ -40,10 +40,16 @@
     <br/>
     <!--出馬数を取得-->
     <?php
+        require_once __DIR__ . "/../config/database_config.php";
+
+        define('DB_SCHEME', '出馬表');
+
         try{
-            $db = new PDO('mysql:dbname=race;host=localhost;charset=utf8','root','root');
+            $db = new PDO('mysql:host=' . DB_HOST . ';dbname=' . DB_SCHEME, DB_USER, DB_PASS);
         }catch(PDOException $e){
-            echo $e->getMessage();
+            $msg = "MySQL への接続に失敗しました。<br>(" . $e->getMessage() . ")";
+            echo $msg;
+            exit;
         }
         $entry = $db->query('SELECT count(*) FROM race.出馬表;');
     ?>
