@@ -105,7 +105,7 @@
                     <?php print($resister["馬名"])?>
                     <div class="jockey_name">
                         <?php print($resister["性齢"])?>
-                        <?php print("　　　　　　")?>
+                        <?php print("　　")?>
                         <?php print($resister["騎手"])?>
                         <?php print($resister["斤量"])?>
                         <hr class="horseList_hr">
